@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-21T17:00:02.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="bD-7GB9WT0pzYk4hDwKs" version="14.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-21T17:35:01.932Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="PF2FoKQ8E-EJLKhZidfJ" version="14.9.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -86,8 +86,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aM9u6N3OBEJ6Bz7HZgSO-18" value="Search" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="340" y="40" width="40" height="20" as="geometry" />
+        <mxCell id="aM9u6N3OBEJ6Bz7HZgSO-18" value="Tìm Kiếm" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="40" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
