@@ -1,119 +1,247 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="/mystyle.css">
-        <title>Homepage</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="#" style="margin-top: -14px; margin-bottom: -14px;"><img src="/logo/viet_travel_logo.png" style="width: 170px; height: 90px"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Themes
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Mountain Tour</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Sea Tour</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Island Tour</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Old Town Tour</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Promotions</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:300px;">
-                                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sign Up</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log In</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> 
-        </header>
-        <section>
-            <!--image slider start-->
-            <div class="slide-box">
-                <div class="themes-slide">
-                    <!--radio buttons start-->
-                    <input type="radio" name="radio-themes-btn" id="radio1">
-                    <input type="radio" name="radio-themes-btn" id="radio2">
-                    <input type="radio" name="radio-themes-btn" id="radio3">
-                    <input type="radio" name="radio-themes-btn" id="radio4">
-                    <!--radio buttons end-->
-                    <!--slide images start-->
-                    <div class="slide-item first"><img src="/img/ma-pi-leng.jpg"></div>
-                    <div class="slide-item"><img src="/img/vinh_ha_long.jpg"></div>
-                    <div class="slide-item"><img src="/img/pho_co_hoi_an.jpg"></div>
-                    <div class="slide-item"><img src="/img/dao_phu_quoc.jpg"></div>
-                    <!--slide images end-->
-                    <!--automatic navigation start-->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-                    <!--automatic navigation end-->
-                </div>
-                <!--manual navigation start-->
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-                <!--manual navigation end-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <!--image slider end-->
-            <script type="text/javascript">
-            var counter = 1;
-            setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if(counter > 4){
-                    counter = 1; 
-                }            
-            },5000)
-            </script>
-        </section>
-        <footer>
+          </nav>
+        <!-- <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="#" style="margin-top: -14px; margin-bottom: -14px;"><img src="logo/viet_travel_logo.png" style="width: 170px; height: 90px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Themes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mountain Tour</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sea Tour</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Island Tour</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Old Town Tour</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promotions</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:300px;">
+                            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  -->
+    </header>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/dao_phu_quoc.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block" style="top: 35%;">
+                    <h1>First slide label</h1>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-outline-secondary" style="color: #fff; border: 2px solid #fff; padding: 16px 40px; font-size: 20px; margin-top: 20px;">View More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/ma-pi-leng.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block" style="top: 35%;">
+                  <h1>Second slide label</h1>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <button type="button" class="btn btn-outline-secondary" style="color: #fff; border: 2px solid #fff; padding: 16px 40px; font-size: 20px; margin-top: 20px;">View More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/pho_co_hoi_an.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block" style="top: 35%;">
+                  <h1>Third slide label</h1>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button type="button" class="btn btn-outline-secondary" style="color: #fff; border: 2px solid #fff; padding: 16px 40px; font-size: 20px; margin-top: 20px;">View More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/vinh_ha_long.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block" style="top: 35%;">
+                  <h1>Third slide label</h1>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button type="button" class="btn btn-outline-secondary" style="color: #fff; border: 2px solid #fff; padding: 16px 40px; font-size: 20px; margin-top: 20px;">View More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+        <div id="promotion" class="section white">
+            <div class="container">
+                <div class="content center">
+                    <h5 class="title-black">Vòng Quanh Việt Nam</h5>
+                    <span class="line gold"></span>
+                    <h2 class="title-black">It's time to <span class="title-gold">Travel</span></h2>
+                    <h6>
+                        Đã đến lúc đi du lịch. Hãy xem những địa điểm độc nhất và được ghé thăm nhiều nhất trên Việt Nam - được chọn chỉ dành cho bạn.
+                        <br>
+                        Bắt đầu đi du lịch thế giới ngay hôm nay!
+                    </h6>
+    
+                    <div class="promotion-slider">
+                        <div class="promotion-slides">
+        
+                            <input type="radio" name="radio-btn" id="promotion-radio1">
+                            <input type="radio" name="radio-btn" id="promotion-radio2">
+                            <input type="radio" name="radio-btn" id="promotion-radio3">
+                            <input type="radio" name="radio-btn" id="promotion-radio4">
+                            <input type="radio" name="radio-btn" id="promotion-radio5">
+                            <input type="radio" name="radio-btn" id="promotion-radio6">
+                            <input type="radio" name="radio-btn" id="promotion-radio7">
+                            <input type="radio" name="radio-btn" id="promotion-radio8">
+        
+                            <div class="promotion-slide one">
+                                <img src="img/da-nang.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/vung-tau.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/con-dao.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/vinh-ha-long.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/ha-giang.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/ha-noi.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/phan-xi-pang.jpg" alt="">
+                            </div>
+                            <div class="promotion-slide">
+                                <img src="img/pho-co.jpg" alt="">
+                            </div>
+        
+                            <div class="promotion-navigation-auto">
+                                <div class="promotion-auto-btn1"></div>
+                                <div class="promotion-auto-btn2"></div>
+                                <div class="promotion-auto-btn3"></div>
+                                <div class="promotion-auto-btn4"></div>
+                                <div class="promotion-auto-btn5"></div>
+                                <div class="promotion-auto-btn6"></div>
+                                <div class="promotion-auto-btn7"></div>
+                                <div class="promotion-auto-btn8"></div>
+                            </div>
+                        </div>
+        
+                        <div class="promotion-navigation-manual">
+                            <label for="promotion-radio1" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio2" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio3" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio4" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio5" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio6" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio7" class="promotion-manual-btn"></label>
+                            <label for="promotion-radio8" class="promotion-manual-btn"></label>
+                        </div>
+    
+                        <script type="text/javascript">
+                            var counterpromotion = 1;
+                            setInterval(function(){
+                                document.getElementById('promotion-radio' + counterpromotion).checked = true;
+                                counterpromotion++;
+                                if(counterpromotion > 8){
+                                    counterpromotion = 1;
+                                }
+                            },5000);
+                            </script>
+                    </div>
+                    
+                    <div>
+                        <button type="button" class="btn btn-outline-secondary btn-lg" style="margin-top: 20px; border: 2px solid black;">Xem thêm khuyến mãi</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
 
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="/myjavascript.js"></script>
-    </body>
-</html> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
