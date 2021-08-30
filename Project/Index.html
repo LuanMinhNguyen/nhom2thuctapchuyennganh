@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="mystyle.css">
     <title>Viet Travel | Homepage</title>
@@ -11,7 +15,7 @@
 <body>
     <header>
         <!--  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-color">
+        <nav class="navbar navbar-expand-lg navbar-light bg-color fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="margin-top: -10px; margin-bottom: -10px;"><img src="logo/viet_travel_logo.png" style="width: 100px; height: 100px"></a>
                 <button class="navbar-toggler bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +72,7 @@
           </nav>
     </header>
     <section>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -116,98 +120,245 @@
           </div>
     </section>
     <section>
-        <div id="promotion" class="section white">
+        <div class="promotion--section">
             <div class="container">
-                <div class="content center">
-                    <h5 class="title-black">Vòng Quanh Việt Nam</h5>
-                    <span class="line gold"></span>
-                    <h2 class="title-black">It's time to <span class="title-gold">Travel</span></h2>
-                    <h6>
-                        Đã đến lúc đi du lịch. Hãy xem những địa điểm độc nhất và được ghé thăm nhiều nhất trên Việt Nam - được chọn chỉ dành cho bạn.
-                        <br>
-                        Bắt đầu đi du lịch thế giới ngay hôm nay!
-                    </h6>
-    
-                    <div class="promotion-slider">
-                        <div class="promotion-slides">
-        
-                            <input type="radio" name="radio-btn" id="promotion-radio1">
-                            <input type="radio" name="radio-btn" id="promotion-radio2">
-                            <input type="radio" name="radio-btn" id="promotion-radio3">
-                            <input type="radio" name="radio-btn" id="promotion-radio4">
-                            <input type="radio" name="radio-btn" id="promotion-radio5">
-                            <input type="radio" name="radio-btn" id="promotion-radio6">
-                            <input type="radio" name="radio-btn" id="promotion-radio7">
-                            <input type="radio" name="radio-btn" id="promotion-radio8">
-        
-                            <div class="promotion-slide one">
-                                <img src="img/da-nang.jpg" alt="">
-                            </div>
-                            <div class="promotion-slide">
-                                <img src="img/vung-tau.jpg" alt="">
-                            </div>
-                            <div class="promotion-slide">
-                                <img src="img/con-dao.jpg" alt="">
-                            </div>
-                            
-                            <div class="promotion-slide">
-                                <img src="img/ha-giang.jpg" alt="">
-                            </div>
-                            <div class="promotion-slide">
-                                <img src="img/ha-noi.jpg" alt="">
-                            </div>
-                            <div class="promotion-slide">
-                                <img src="img/phan-xi-pang.jpg" alt="">
-                            </div>
-                            <div class="promotion-slide">
-                                <img src="img/pho-co.jpg" alt="">
-                            </div>
-        
-                            <div class="promotion-navigation-auto">
-                                <div class="promotion-auto-btn1"></div>
-                                <div class="promotion-auto-btn2"></div>
-                                <div class="promotion-auto-btn3"></div>
-                                <div class="promotion-auto-btn4"></div>
-                                <div class="promotion-auto-btn5"></div>
-                                <div class="promotion-auto-btn6"></div>
-                                <div class="promotion-auto-btn7"></div>
-                                <div class="promotion-auto-btn8"></div>
-                            </div>
-                        </div>
-        
-                        <div class="promotion-navigation-manual">
-                            <label for="promotion-radio1" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio2" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio3" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio4" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio5" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio6" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio7" class="promotion-manual-btn"></label>
-                            <label for="promotion-radio8" class="promotion-manual-btn"></label>
-                        </div>
-    
-                        <script type="text/javascript">
-                            var counterpromotion = 1;
-                            setInterval(function(){
-                                document.getElementById('promotion-radio' + counterpromotion).checked = true;
-                                counterpromotion++;
-                                if(counterpromotion > 8){
-                                    counterpromotion = 1;
-                                }
-                            },5000);
-                            </script>
-                    </div>
-                    
+                <div class="promotion--content">
                     <div>
-                        <button type="button" class="btn btn-outline-secondary btn-lg" style="margin-top: 20px; border: 2px solid black;">Xem thêm khuyến mãi</button>
+                        <h5 class="promotion--title">Vòng Quanh Việt Nam</h5>
+                        <span class="line gold"></span>
+                        <h2 class="t-black">It's time to <span class="t-gold">Travel</span></h2>
+                        <h6>
+                            Đã đến lúc đi du lịch. Hãy xem những địa điểm độc nhất và được ghé thăm nhiều nhất trên Việt Nam - được chọn chỉ dành cho bạn.
+                            <br>
+                            Bắt đầu đi du lịch thế giới ngay hôm nay!
+                        </h6>
+                    </div>
+                    <!-- promotion slider -->
+                    <script>
+                        $(document).ready(function(){
+                            $('.owl-carousel').owlCarousel({
+                                center: true,
+                                items:2,
+                                loop:true,
+                                margin:20,
+                                autoWidth:true,
+                                autoplay:true,
+                                autoplayTimeout:5000,
+                                responsive:{
+                                    0 : {
+                                        items:2
+                                    },
+                                    600 : {
+                                        items:3
+                                    },
+                                    900 : {
+                                        items:4
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                    <div id="promotion--slider">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/da-nang.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Đà Nẵng</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/pho-co.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Hội An</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/vung-tau.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Vũng Tàu</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/vinh-ha-long.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Vịnh Hạ Long</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/con-dao.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Côn Đảo</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/ha-giang.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Hà Giang</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="img/ha-noi.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Hà Nội</p>
+                            </div> 
+                        </div>
+                        <a href="#">
+                            <button type="button" class="btn promotion-btn">View ALL Promotion</button>
+                        </a>
                     </div>
                 </div>
-                
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+    </section>
+
+    <section>
+        <div class="blog--section">
+            <div class="container">
+                <div class="blog--content">
+                    <h5 class="title">The Blog</h5>
+                    <span class="line gold"></span>
+                    <h2 class="t-black">Latest from the <span class="t-gold">Blog</span></h2>
+                    
+                    <div class= "container-fluid">                        
+                        <div class= "row blog--content__review">
+                            <div class ="col-12 col-sm-6 col-md-4">
+                                <div class="blog--item">
+                                    <a href="">
+                                        <img src="img/blog-phan-thiet.jpg" alt="">
+                                    </a>
+                                    <h3 class="blog--item__title">Khám Phá Santorini Phan Thiết</h3>
+                                    <p class="t-black">By: <span class="t-gold">Nguyễn Minh Luân</span></p>
+                                    <div class="blog--item_view">
+                                        <img src="img/view1.jpg" alt="">
+                                        <img src="img/view2.jpg" alt="">
+                                        <img src="img/view3.jpg" alt="">
+                                        <span class="views">+1850</span>        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class ="col-12 col-sm-6 col-md-4">
+                                <div class="blog--item">
+                                    <a href="">
+                                        <img src="img/blog-ba-na-hill.jpg" alt="">
+                                    </a>
+                                    <h3 class="blog--item__title">Khám Phá Bà Nà Hill</h3>
+                                    <p class="t-black">By: <span class="t-gold">Lê Hồng Phong</span></p>
+                                    <div class="blog--item_view">
+                                        <img src="img/view2.jpg" alt="">
+                                        <img src="img/view1.jpg" alt="">
+                                        <span class="views">+2351</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class ="col-12 col-sm-6 col-md-4">
+                                <div class="blog--item">
+                                    <a href="">
+                                        <img src="img/blog-kien-giang.jpg" alt="">
+                                    </a>
+                                    <h3 class="blog--item__title">Khám Phá Đảo Hải Tặc Kiên Giang</h3>
+                                    <p class="t-black">By: <span class="t-gold">Nguyễn Đình Nhật</span></p>
+                                    <div class="blog--item_view">
+                                        <img src="img/view3.jpg" alt="">
+                                        <img src="img/view1.jpg" alt="">
+                                        <img src="img/view2.jpg" alt="">
+                                        <span class="views">+2001</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="line-gold"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="testimonial--section" style="margin-bottom: 100px;">
+            <div class="container">
+                <div class="testimonial--content">
+                    <h5 class="title">testimonial</h5>
+                    <span class="line gold"></span>
+                    <h2 class="t-black">Our clients <span class="t-gold">say:</span></h2>
+
+                    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" style="background-color: #ad974f;" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2" style="background-color: #ad974f;"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3" style="background-color: #ad974f;"></button>
+                        </div>
+                        <div class="carousel-inner testimonial--clients">
+                          <div class="carousel-item active">
+                            <img src="img/view1.jpg" class="d-block" alt="...">
+                            <div class="testimonial--clients__info">
+                                <p>A must-have template. Maybe one of the best vintage templates so far in the market. Recommended 100%.</p>
+                                <p class="testimonial--clients__name">Nguyễn Minh Luân</p>
+                                <span class="testimonial--clients__job">Students</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/view2.jpg" class="d-block" alt="...">
+                              <div class="testimonial--clients__info">
+                                <p>Extremelly flexible and easy to use. Code is clean and all files well organized. Great job guys.</p>
+                                <p class="testimonial--clients__name">Lê Hồng Phong</p>
+                                <span class="testimonial--clients__job">Students</span>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/view3.jpg" class="d-block" alt="...">
+                              <div class="testimonial--clients__info">
+                                <p>Fast, easy, reliable, fun, flexible, modern. Many options, colors, widgets. +++</p>
+                                <p class="testimonial--clients__name">Nguyễn Đình Nhật</p>
+                                <span class="testimonial--clients__job">Moravian Ltd - CEO</span>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
