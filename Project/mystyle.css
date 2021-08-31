@@ -1,14 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
-
+/* Body */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.gold{
+    background-color: #ad974f;
+}
+
+.line{
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.t-gold{
+    color: goldenrod;
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body h5{
+    font-size: 14px;
+    margin: 50px 0 0 0;
+    display: block;
+    text-transform: uppercase;
+}
+
+body h2{
+    font-size: 28px;
+    display: block;
+    text-transform: uppercase;
+}
+
+body h6{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
+}
+
+@keyframes my-transition {
+    0%{
+        transform: scale(1);
+    }
+    33%{
+        transform: scale(1.1);
+    }
+    66%{
+        transform: scale(1);
+    }
 }
 
 /* my navigation bar design */
-.collapse{
-    font-family: 'Montserrat', sans-serif;;
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 10000;
+    transition: all 0.4s ease-in;
+}
+
+.responsive-navbar{
+    background: white;
+    padding: 5px 0;
+}
+
+.sticky{
+    background: white;
+    border-bottom: 1px solid goldenrod;
+    padding: 5px 0;
+}
+
+.sticky .navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: #000;
+}
+
+/* Chỉnh màu ở phần này */
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bolder;
 }
 
 .navbar-nav .dropdown-menu{
@@ -21,7 +102,8 @@
 
 .navbar-nav .dropdown-menu .dropdown-item:hover {
     background-color: transparent;
-    color: rgb(170, 155, 127);
+    color: wheat;
+    font-weight: bolder;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -29,16 +111,12 @@
     font-weight: bolder;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0, .8);
     font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
     color: rgb(170, 155, 127);
-}
-
-.bg-color{
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .btn-outline-success {
@@ -47,25 +125,22 @@
 }
 
 .btn-outline-success:hover {
-    background-color: rgba(170, 155, 127, 0.5);
-    border: 2px rgba(170, 155, 127, 0.5) solid;
+    background-color: rgb(170, 155, 127);
+    border: 2px rgb(170, 155, 127) solid;
     color: black;
     animation: my-transition 2s;
 }
 
 .form-control{
     background-color: rgba(255, 255, 255, .6);
-    border: 2px black solid;
+    border: 1px black solid;
     
 }
 
 /* my section design */
-.carousel{
-    font-family: 'Montserrat', sans-serif;
-}
-
 .carousel-item img{
     height: 100vh;
+    object-fit: cover;
 }
 
 .btn-outline-secondary{
@@ -86,17 +161,22 @@
     animation: my-transition 2s;
 }
 
-@keyframes my-transition {
-    0%{
-        transform: scale(1);
-    }
-    33%{
-        transform: scale(1.15);
-    }
-    66%{
-        transform: scale(1);
-    }
+.carousel-indicators [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    border: 0.1px rgba(0, 0, 0, 0) solid;
+    border-radius: 100%;
 }
+
+.carousel-indicators .active{
+    width: 16px;
+    height: 7px;
+    border: 0.1px rgba(0, 0, 0, 0) solid;
+    border-radius: 12px;
+    background-color: white;
+    transition: ease-in 0.2s;
+}
+
 .carousel-caption .h5{
     font-size: 12px;
     color: wheat;
@@ -135,63 +215,26 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-}
-
-.gold{
-    background-color: #ad974f;
-}
-.line{
-    width: 50px;
-    height: 1px;
-    display: inline-block;
-    margin: 0px auto;
-}
-.promotion--title{
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    width: 100%;
-    margin: 115px 0 0 0;
-    display: block;
-    text-transform: uppercase;
-}
-
-.t-black{
-    color: #000;
-}
-
-.t-gold{
-    color: #ad974f;
-}
-
-.promotion--content h6{
-    font-size: 18px;
-    color: #3f382e;
-    font-weight: 200;
-    line-height: 1.8em;
-    width: 100%;
-    margin-bottom: 50px;
+    margin: 0 auto;
 }
 
 .owl-carousel .item img{
-    width: 350px;
-    height: 350px;
-    border-radius: 5px;
+    width: 300px;
+    height: 400px;
 }
 .owl-carousel .item{
     position: relative;
 }
 .owl-carousel .item .item--title{
     width: 100%;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    font-size: 20px;
+    color: white;
     position: absolute;
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    font-weight: bold;
 }
+
 .promotion-btn{
     padding: 20px 30px;
     text-align: center;
@@ -202,7 +245,7 @@
 
 .promotion-btn:hover{
     animation: my-transition 2s;
-    background-color: rgba(0, 0, 0.4, 0.4);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .btn--viewmore{
@@ -228,42 +271,29 @@
 }
 
 /* Blog section */
+
 .blog--content{
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     text-align: center;
 }
 
-.blog--content .title{
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    display: block;
-    text-transform: uppercase;
-}
-
-.blog--content__review{
-    margin-top: 50px;
-}
-
 .blog--item img{
     width: 100%;
-    height: 225px;
-    border-radius: 5px;
-    transition: transform ease-out 0.3s;
-}
-
-.blog--item img:hover{
-    transform: scale(1.05);
+    height: 250px;
 }
 
 .blog--item{
     margin-top: 30px;
 }
 
+.blog--item:hover{
+    animation: my-transition 1.2s;
+}
+
 .blog--item p{
     text-align: left;
-    margin-top: -5px;
+    margin-top: -10px;
     margin-left: 10px;
     font-size: 12px;
 }
@@ -275,7 +305,7 @@
     text-align: left;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    
 }
 
 .blog--item_view{
@@ -297,7 +327,6 @@
     opacity: 0.7;
 }
 
-
 .blog--content__review .line-gold{
     width: 95%;
     height: 1px;
@@ -307,20 +336,67 @@
     background-color: #ad974f;
 }
 
-/* Video Section */
+/* About Section */
+.section{
+    width: 100%;
+    padding: 105px 0 0 0;
+}
 
+.about--section{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.about--section .center{
+    text-align: center;
+}
+
+.about--content h5{
+    color: white !important;
+}
+
+.about--content h2{
+    color: white !important;
+}
+
+.about--content h6{
+    color: white !important;
+}
+
+.about--btn{
+    margin-top: 20px !important;
+    min-width: 200px;
+    padding: 20px 30px;
+    text-align: center;
+    border: 2px solid white;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: bold;
+}
+
+.about--btn:hover{
+    animation: my-transition 2s;
+}
+
+.video-back{
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-back video{
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Testimonial section */
 .testimonial--content{
     text-align: center;
-}
-
-.testimonial--content .title{
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    display: block;
-    text-transform: uppercase;
 }
 
 .testimonial--clients{
@@ -334,9 +410,14 @@
     margin: 50px auto;
 }
 
+.testimonial--clients__info{
+    margin-bottom: 70px;
+}
+
 .testimonial--clients .carousel-item p{
     font-size: 16px;
     font-family: 'Montserrat', sans-seri;
+    margin: 0;
 }
 
 .testimonial--clients__name{
@@ -344,14 +425,178 @@
     font-weight: 600;
     opacity: 0.9;
     font-family: 'Montserrat', sans-seri;
-    margin-bottom: -5px;
-}
-
-.testimonial--clients__info{
-    margin-bottom: 50px;
 }
 
 .testimonial--clients__job{
     font-size: 12px;
     color: #ad974f;
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px){
+    body h5{
+        font-size: 9px;
+    }
+    
+    body h2{
+        font-size: 23px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    body h6{
+        font-size: 13px;
+        color: black;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .carousel-caption .description{
+        font-size: 25px;
+    }
+
+    .carousel-caption .keyword{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    body h5{
+        font-size: 10px;
+    }
+    
+    body h2{
+        font-size: 24px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    body h6{
+        font-size: 14px;
+        color: black;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .carousel-caption .description{
+        font-size: 28px;
+    }
+
+    .carousel-caption .keyword{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body h5{
+        font-size: 11px;
+    }
+    
+    body h2{
+        font-size: 25px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    body h6{
+        font-size: 15px;
+        color: black;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .carousel-caption .description{
+        font-size: 31px;
+    }
+
+    .carousel-caption .keyword{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    body h5{
+        font-size: 12px;
+    }
+    
+    body h2{
+        font-size: 26px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    body h6{
+        font-size: 16px;
+        color: black;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .carousel-caption .description{
+        font-size: 34px;
+    }
+
+    .carousel-caption .keyword{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body h5{
+        font-size: 13px;
+    }
+    
+    body h2{
+        font-size: 27px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    body h6{
+        font-size: 17px;
+        color: black;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .carousel-caption .description{
+        font-size: 37px;
+    }
+
+    .carousel-caption .keyword{
+        font-size: 41px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    body h5{
+        font-size: 14px;
+    }
+    
+    body h2{
+        font-size: 28px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    body h6{
+        font-size: 18px;
+        color: black;
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .carousel-caption .description{
+        font-size: 40px;
+    }
+
+    .carousel-caption .keyword{
+        font-size: 44px;
+    }
 }
