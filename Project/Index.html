@@ -76,13 +76,13 @@
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-envelope" data-bs-toggle="modal" href="#staticBackdrop-Contact"></i></a>
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-envelope navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-Contact"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-user" data-bs-toggle="modal" href="#staticBackdrop-SignIn"></i></a>
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-user navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignIn"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user-plus" data-bs-toggle="modal" href="#staticBackdrop-SignUp"></i></a>
+                        <a class="nav-link" style="cursor: pointer;"><i class="fas fa-user-plus navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignUp"></i></a>
                     </li>
                 </ul>
               </div>
@@ -468,21 +468,32 @@
                                 <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
                             </div>
                             <div class="modal-body_item">
-                                <label class="label-password">Mật Khẩu</label>
-                                <input type="password" name="password" id="password-login" placeholder="Nhập Mật Khẩu">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <div class="modal-footer-social">
-                            <a href=""><button type="button"><i class="fab fa-facebook-square" style="color: rgb(59, 89, 152);"></i>  Đăng nhập với Facebook</button></a>
-                            <a href=""><button type="button"><i class="fab fa-google" style="color: #ad974f;"></i>  Đăng Nhập với Google</button></a>
-                        </div>
-
+                        <a href="" class="forget-password">Quên mật khẩu?</a>
                         <div class="modal-footer-login">
                             <a href=""><button type="button" class="btn btn-primary" >Đăng nhập</button></a>
                         </div>
-                        <a href="" class="forget-password">Quên Mật Khẩu?</a>
+                        <span class="line gold" style="height: 1.5px;"></span>
+                        <p>Đăng nhập với các mạng xã hội khác</p>
+                        <div class="modal-footer-social" style="display: inline-block; justify-content: space-between; width: 240px; text-align: center;">
+                            <div class="social-network-icon" style="border: 2px solid rgb(13, 110, 253)">
+                                <a href="" class="" ><i class="fab fa-facebook-f social-network-icon-scale"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid red">
+                                <a href="" class="" ><i class="fab fa-google-plus-g social-network-icon-scale" style="color: red"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid orange">
+                                <a href="" class="" ><i class="fab fa-instagram-square social-network-icon-scale" style="color: orange;"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid rgb(29, 155, 240)">
+                                <a href="" class="" ><i class="fab fa-twitter social-network-icon-scale" style="color: rgb(29, 155, 240);"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -527,11 +538,11 @@
     <footer>
         <div class="container">
             <div class="links">
-                <a href="">Themes</a>
-                <a href="">Promotions</a>
-                <a href="">Blogs</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <a class="footer-font" href="">Themes</a>
+                <a class="footer-font" href="">Promotions</a>
+                <a class="footer-font" href="">Blogs</a>
+                <a class="footer-font" href="">About</a>
+                <a class="footer-font" href="">Contact</a>
             </div>
             <div class="copyright center">2021 - All rights reserved to &copy;Vietnam Experdition</div>
         </div>

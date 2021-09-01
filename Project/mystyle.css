@@ -34,6 +34,7 @@ body h5{
     margin: 50px 0 0 0;
     display: block;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 body h2{
@@ -60,6 +61,10 @@ body h6{
     66%{
         transform: scale(1);
     }
+}
+
+.footer-font{
+    letter-spacing: 3px;
 }
 
 /* my navigation bar design */
@@ -89,6 +94,10 @@ body h6{
 }
 
 /* Chỉnh màu ở phần này */
+.navbar-icon-scale{
+    transform: scale(1.4);
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: white;
     font-weight: bolder;
@@ -101,7 +110,7 @@ body h6{
 .navbar-nav .dropdown-menu .dropdown-item{
     color: black;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-size: 12px;
 }
 
@@ -119,7 +128,7 @@ body h6{
     color: black;
     padding: 1rem 1rem;
     font-weight: bold;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 13px;
 }
@@ -861,7 +870,9 @@ footer .copyright{
 .forget-password{
     margin: 0px auto;
     text-align: center;
-    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .modal-footer .modal-footer-signup button{
@@ -873,7 +884,8 @@ footer .copyright{
     border: none;
     color: white;
     margin-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .modal-footer .modal-footer-login button{
@@ -885,7 +897,8 @@ footer .copyright{
     border: none;
     color: white;
     margin-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .modal-footer .modal-footer-signup button:hover{
@@ -894,6 +907,20 @@ footer .copyright{
 
 .modal-footer .modal-footer-login button:hover{
     opacity: 0.7;
+}
+
+.social-network-icon{
+    border-radius: 5px; 
+    width: 40px; 
+    height: 40px; 
+    text-align: center; 
+    margin: 0px auto;
+    display: inline-block;
+    padding: 7.4px;
+}
+
+.social-network-icon-scale{
+    transform: scale(1.5);
 }
 
 @media (min-width: 576px){
