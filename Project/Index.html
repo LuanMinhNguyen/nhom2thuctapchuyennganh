@@ -78,7 +78,7 @@
                         <a class="nav-link" href="#"><i class="far fa-envelope"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-user"></i></a>
+                        <a class="nav-link" href="#"><i class="far fa-user" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></a>
                     </li>
                 </ul>
               </div>
@@ -418,6 +418,94 @@
             </div>
         </div>
     </section>
+
+    <!-- Đăng Nhập -->
+    <section>
+         
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">  
+                    <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng Nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="modal-body_item">
+                            <label class="label-email">Email</label>
+                            <input type="email" name="email" id="email-login" placeholder="VD: nguyendinhnhat2010@gmail.com">
+                        </div>
+                        <div class="modal-body_item">
+                            <label class="label-password">Mật Khẩu</label>
+                            <input type="password" name="password" id="password-login" placeholder="Nhập Mật Khẩu">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer-social">
+                        <a href=""><button type="button"><i class="fab fa-facebook-square" style="color: rgb(59, 89, 152);"></i>  Đăng nhập với Facebook</button></a>
+                        <a href=""><button type="button"><i class="fab fa-google" style="color: #ad974f;"></i>  Đăng Nhập với Google</button></a>
+                    </div>
+
+                    <div class="modal-footer-login">
+                        <a href=""><button type="button" class="btn btn-primary" >Đăng Nhập</button></a>
+                    </div>
+
+                    <div class="modal-footer-signup">
+                        <a href="" class="forget-password">Quên Mật Khẩu?</a>
+                        <button type="button" class="btn--signup" onclick="document.getElementById('my--modal--signup').style.display='block'" data-bs-dismiss="modal">Đăng Kí</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+        <div class="modal" id="my--modal--signup">
+            <div class="modal__overlay"></div>
+            <div class="modal--body">
+                <div class="auth--form">
+                    <div class="auth--form__container">
+                        <div class="auth--form__header">
+                            <h3 class="auth--form__heading">Đăng Kí</h3>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="document.getElementById('my--modal--signup').style.display='none'"><span class="auth--form__switch-btn">Đăng Nhập</span></a>
+                        </div>
+
+                        <div class="auth--form__form">
+                            <div class="auth--form__group">
+                                <label>Nhập email của bạn</label>
+                                <input type="text" class="auth--form__input" placeholder="Nhập email của bạn">
+                            </div>
+                            <div class="auth--form__group">
+                                <label>Nhập mật khẩu của bạn</label>
+                                <input type="password" class="auth--form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                            <div class="auth--form__group">
+                                <label>Nhập lại mật khẩu</label>
+                                <input type="password" class="auth--form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+
+                        <div class="auth--form__aside">
+                            <p class="auth--form__policy">Bằng việc đăng kí bạn có thể nhận thông báo về các tin tức & sự kiện mới nhất của chúng tôi.</p>
+                        </div>
+
+                        <div class="auth--form_controls">
+                            <button class="btn--back" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="document.getElementById('my--modal--signup').style.display='none'"><span class="auth--form__switch-btn">TRỞ LẠI</button>
+                            <button class="btn--signup">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+
+                    <div class="auth--form-social">
+                        <a href=""><button type="button"><i class="fab fa-facebook-square" style="color: rgb(59, 89, 152);"></i>  Đăng kí với Facebook</button></a>
+                        <a href=""><button type="button"><i class="fab fa-google" style="color: #ad974f;"></i>  Đăng kí với Google</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
     <footer>
         <div class="container">
             <div class="links">

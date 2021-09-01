@@ -69,7 +69,7 @@ body h6{
     left: 0;
     width: 100%;
     display: block;
-    z-index: 10000;
+    z-index: 10;
     transition: all 0.4s ease-in;
 }
 
@@ -751,4 +751,261 @@ footer .copyright{
     color: #999;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+/* Đăng Nhập */
+.modal-header{
+    border: none;
+    margin-top: -20px;
+}
+
+.modal-title{
+    font-weight: bold;
+    margin-left: 40%;
+    font-size: 16px;
+}
+
+.modal-footer{
+    width: 100%;
+    border: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal-dialog{
+    top: 10%;
+}
+
+.modal-body .modal-body_item{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .modal-body_item input{
+    max-width: 80%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 0px 7px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e6e3e3;
+    margin-left: 10%;
+}
+
+.modal-body .modal-body_item input:focus{
+    outline: rgba(153, 196, 245, 0.6);
+}
+
+.modal-body .modal-body_item .label-email{
+    margin-left: calc(10px + 10%);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.modal-body .modal-body_item .label-password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: calc(10px + 10%);
+    font-weight: bold;
+}
+.modal-footer .modal-footer-login a button{
+    min-width: 240px;
+}
+
+.modal-footer .modal-footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer .modal-footer-social button{
+    font-size: 14px;
+    min-width: 240px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #e6e3e3;
+    background: #e6e3e3;
+}
+
+.modal-footer .modal-footer-social button:hover{
+    opacity: 0.8;
+}
+
+.modal-footer .modal-footer-signup{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer .modal-footer-signup .forget-password{
+    margin: 5px 0 10px 0;
+    text-align: center;
+    color: #636D77;
+}
+
+.modal-footer .modal-footer-signup button{
+    min-width: 240px;
+    border-radius: 5px;
+    background: #0070ba;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.modal-footer .modal-footer-signup button:hover{
+    opacity: 0.7;
+}
+
+/* Đăng Kí */
+#my--modal--signup{
+    top: 10%;
+}
+
+.modal--signup{
+    display: none;
+}
+
+.modal--body{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.auth--form__container{
+    padding: 20px 32px 0 32px;
+}
+
+.auth--form__header{
+    margin-bottom: 40px;
+}
+
+.auth--form__header a{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.auth--form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth--form__heading{
+    color:goldenrod;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.uth--form__form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.auth--form__group{
+    width: 80%;
+    margin: 0px auto 20px auto;
+}
+
+.auth--form__group label{
+    margin-left: 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.auth--form__group .auth--form__input{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 0px 7px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e6e3e3;
+}
+
+.auth--form__group .auth--form__input:focus{
+    outline: none;
+}
+
+.auth--form__aside{
+    width: 80%;
+    margin: 0px auto;
+}
+.auth--form__policy{
+    text-align: center;
+    font-size: 12px;
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+.auth--form_controls{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth--form_controls .btn--back{
+    border-radius: 5px;
+    min-width: 120px;
+    background: #6c757d;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.auth--form_controls .btn--signup{
+    border-radius: 5px;
+    min-width: 120px;
+    background: #0070ba;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.auth--form_controls .btn--back:hover{
+    opacity: 0.8;
+}
+
+.auth--form_controls .btn--signup:hover{
+    opacity: 0.8;
+}
+
+.auth--form-social{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+.auth--form-social a button{
+    min-width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #e6e3e3;
+}
+
+@media (min-width: 576px){
+    .modal--body{
+        max-width: 500px;
+        margin: 1.75rem auto;
+    
+    
+    }
 }
