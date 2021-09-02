@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-22T18:04:06.274Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="rwV2ij5LaQozRUK7MhxD" version="14.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-02T08:57:11.735Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="-BYhC8ZM3VNE1K5q9ml1" version="14.9.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -89,7 +89,7 @@
         <mxCell id="CFdorZwno7517KHtC_0F-34" value="Đăng tải Blogs" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
           <mxGeometry x="320" y="60" width="80" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="-fB76d7Y7Dw5iQdUH0aj-1" value="Đăng nhập thành công" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" source="CFdorZwno7517KHtC_0F-20" target="CFdorZwno7517KHtC_0F-18">
+        <mxCell id="-fB76d7Y7Dw5iQdUH0aj-1" value="Đăng nhập thành công" style="html=1;verticalAlign=bottom;endArrow=block;" parent="1" source="CFdorZwno7517KHtC_0F-20" target="CFdorZwno7517KHtC_0F-18" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="365" y="160" as="sourcePoint" />
             <mxPoint x="185" y="160" as="targetPoint" />
