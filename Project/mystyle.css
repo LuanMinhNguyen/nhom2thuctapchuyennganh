@@ -20,6 +20,13 @@
     margin: 0px auto;
 }
 
+.line-vertical{
+    width: 1px;
+    height: 50px;
+    display: inline-block;
+    margin: 0px auto;
+}
+
 .t-gold{
     color: goldenrod;
     font-weight: 500;
@@ -29,18 +36,24 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-body h5{
-    font-size: 14px;
-    margin: 50px 0 0 0;
+body h1{
+    font-size: 58px;
     display: block;
     text-transform: uppercase;
-    letter-spacing: 3px;
 }
 
 body h2{
     font-size: 28px;
     display: block;
     text-transform: uppercase;
+}
+
+body h5{
+    font-size: 14px;
+    margin: 50px 0 0 0;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 body h6{
@@ -256,9 +269,11 @@ body h6{
 .promotion-btn{
     padding: 20px 30px;
     text-align: center;
-    border: 2px solid #333;
-    font-family: 'Montserrat', sans-serif;
+    border: 2px solid black;
+    background-color: white;
     text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .promotion-btn:hover{
@@ -268,8 +283,8 @@ body h6{
 
 .btn--viewmore{
     border: 2px solid #fff;
-    color: #fff;
-    background-color: none;
+    background-color: #fff;
+    color: #000;
     position: absolute;
     display: block;
     left: 50%;
@@ -280,8 +295,9 @@ body h6{
 }
 
 .btn--viewmore:hover{
-    color: #fff;
-    background-color: rgba(0, 0, 0.4, 0.4);
+    color: #000;
+    background-color: rgba(255, 255, 255, .9);
+    border-color: rgba(255, 255, 255, .9);
 }
 
 .owl-carousel .item:hover .btn--viewmore{
@@ -360,8 +376,15 @@ body h6{
     padding: 105px 0 0 0;
 }
 
+.info-box{
+    height: 200px;
+}
+
+.info-box h5{
+    letter-spacing: 1px;
+}
+
 .about--section{
-    font-family: 'Montserrat', sans-serif;
     position: relative;
 }
 
@@ -386,6 +409,7 @@ body h6{
     min-width: 200px;
     padding: 20px 30px;
     text-align: center;
+    font-size: 15px;
     border: 2px solid white;
     text-transform: uppercase;
     background-color: white;
@@ -397,7 +421,7 @@ body h6{
 }
 
 .video-back{
-    margin-top: 100px;
+    margin: 71.2px 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -659,6 +683,15 @@ body h6{
     margin: 20px 0;
 }
 
+.controls{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group{
+    width: 80%;
+}
+
 .form-group .input--item{
     display: inline-block;
     position: relative;
@@ -669,19 +702,24 @@ body h6{
 .form-group #form--email{
     border: none;
     background-color: #f6f6f6;
-    border-radius: 5px;
-    padding: 25px 25px 24px 25px;
+    border-radius: 10px;
+    padding: 25px;
 }
 
 .form-group .input--item #form--submit{
     padding: 22px;
-    min-width: 150px;
-    border-radius: 5px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
     background-color: #000;
     color: white;
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.form-group .input--item #form--submit:hover{
+    animation: my-transition 2s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -703,26 +741,30 @@ body h6{
     width: 100%;
     text-align: center;
 }
-.social-container i{
-    margin: auto;
-    font-size: 22px;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
+
+.social-container div{
+    display: inline-block;
+    justify-content: space-between;
 }
-.social-container a:hover i{
+
+.social-container div:hover{
+    animation: my-transition 2s;
+}
+
+.social-container i{
+    margin: 0 auto;
     font-size: 24px;
-    opacity: 1;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
+}
+
+.social-container a:hover i{
+    opacity: .7;
+    animation: my-transition 2s;
+    color: goldenrod;
 }
 .social-container a{
-    margin: 5px;
+    margin: 0px 10px auto;
+    text-align: center;
+    border-radius: 10px;
 }
 .m-20 {
 	margin: 20px 0!important;
@@ -734,7 +776,6 @@ body h6{
     padding: 20px !important;
     width: 60px;
     height: 60px;
-    line-height: 2em !important;
 }
 
 /* Footer */
@@ -808,14 +849,14 @@ footer .copyright{
 }
 
 .modal-body .modal-body_item input{
-    max-width: 80%;
-    font-size: 12px;
-    font-weight: bold;
+    width: 80%;
+    height: 50px;
+    font-size: 14px;
     padding: 7px 0px 7px 15px;
     border-radius: 5px;
     border: none;
-    background-color: #e6e3e3;
-    margin-left: 10%;
+    background-color: #f1f1f1;
+    margin: 0px auto;
 }
 
 .modal-body .modal-body_item input:focus{
@@ -875,21 +916,34 @@ footer .copyright{
     font-size: 15px;
 }
 
-.modal-footer .modal-footer-signup button{
-    min-width: 240px;
+.modal-footer .modal-footer-contact button{
+    width: auto;
     border-radius: 5px;
-    background: #0070ba;
+    background: goldenrod;
     font-size: 14px;
     padding: 10px;
     border: none;
     color: white;
     margin-bottom: 10px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.modal-footer .modal-footer-signup button{
+    width: auto;
+    border-radius: 5px;
+    background: goldenrod;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .modal-footer .modal-footer-login button{
-    min-width: 240px;
+    width: auto;
     border-radius: 5px;
     background-color: goldenrod;
     font-size: 14px;
@@ -897,7 +951,7 @@ footer .copyright{
     border: none;
     color: white;
     margin-bottom: 10px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -928,4 +982,152 @@ footer .copyright{
         max-width: 500px;
         margin: 1.75rem auto;
     }
+}
+
+/* About HTML*/
+.icon-scale{
+    transform: scale(2);
+}
+
+.breadcrumb {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+.about{
+    position: relative;
+    height: 30vh;
+    display: flex;
+    padding: 150px 0;
+}
+
+.about-video-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-video-back video{
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.about-banner--form{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 100px 0;
+    object-fit: cover;
+    background-image: url('img/back-stayinconnected.jpg');
+}
+
+.about-banner--form i{
+    transform: scale();
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: goldenrod;
+}
+
+.feedback-line{
+    border-left: 1px dashed goldenrod;
+    width: 1px;
+    height: 80px;
+    display: inline-block;
+    margin: 0 auto;
+    margin: 10px 0 0 0;
+}
+
+.feedback{
+    width: 50%; 
+    display: block; 
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border: 2px #f6f6f6 solid;
+    border-radius: 10px;
+}
+.feedback-img{
+    border-radius: 50%; 
+    width: 100px; 
+    height: 100px;
+}
+
+.feedback h5{
+    font-size: 15px;
+    margin: 20px 0;
+    display: block;
+    letter-spacing: 0px;
+    text-transform: inherit;
+}
+
+.paragraph {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.justify {
+    text-align: justify;
+}
+.info-box {
+    padding: 40px 20px;
+    min-height: 100px;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 6px;
+}
+.info-box:hover{
+    animation: my-transition 2s;
+}
+.light-grey {
+    background: #f6f6f6 !important;
+}
+.t-white {
+    color: #fff !important;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0px);
+}
+[data-aos][data-aos-easing=ease][data-aos], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos-duration='400'][data-aos], body[data-aos-duration='400'] [data-aos] {
+    transition-duration: 0.4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+[data-aos=fade-right] {
+    transform: translate3d(-100px, 0px, 0px);
+}
+.timeline-container .img img {
+    border-radius: 50%;
+    border: 3px solid #f2f2f2;
+    width: 80px;
+}
+.timeline-container .img {
+    text-align: center;
+    width: 150px;
+    margin: 10px auto;
 }
