@@ -32,7 +32,6 @@
         })
         $(window).resize(function(){
             var width = $(window).width();
-            console.log(width);
             if (width < 992){
                 $('nav').addClass('sticky');
             }
@@ -52,22 +51,11 @@
                 <div style="width: 100%;"></div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Themes
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Mountain Tour</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Sea Tour</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Island Tour</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Old Town Tour</a>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Themes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Promotions</a>
+                        <a class="nav-link" href="Promotions.html">Promotions</a>
                     </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blogs</a>
@@ -145,11 +133,13 @@
                         <h5>Vòng Quanh Việt Nam</h5>
                         <span class="line gold"></span>
                         <h2>It's time to <span class="t-gold">Travel</span></h2>
-                        <h6>
-                            Đã đến lúc đi du lịch. Hãy xem những địa điểm độc nhất và được ghé thăm nhiều nhất trên Việt Nam - được chọn chỉ dành cho bạn.
-                            <br>
-                            Bắt đầu đi du lịch thế giới ngay hôm nay!
-                        </h6>
+                        <div style="display: block; margin: 0px auto; width: 60%;">
+                            <h6>
+                                Đã đến lúc đi du lịch. Hãy xem những địa điểm độc nhất và được ghé thăm nhiều nhất trên Việt Nam - được chọn chỉ dành cho bạn.
+                                <br><br>
+                                Bắt đầu khám phá ngay hôm nay!
+                            </h6>
+                        </div>
                     </div>
                     <!-- promotion slider -->
                     <script>
@@ -271,8 +261,10 @@
                 <div class="about--content center">
                     <h5>The Agency</h5>
                     <span class="line gold"></span>
-                    <h2>Discovering the <span class="t-gold">World</span></h2>
-                    <h6>Passionate about travel and sharing the world's wonders on the leisure travel side. We provide corporate travelers hi-touch services to facilitate their business travel needs. Named each year as one of the <span class="t-gold">"Best Places To Work"</span> in New York.</h6>
+                    <h2>Khám phá<span class="t-gold"> Việt Nam</span></h2>
+                    <div style="display: block; margin: 0px auto; width: 60%;">
+                        <h6>Đam mê du lịch và chia sẻ<span class="t-gold"> những điều kỳ diệu</span> của Việt Nam trên khía cạnh du lịch giải trí. Chúng tôi cung cấp dịch vụ hi-touch cho khách du lịch doanh nghiệp để tạo điều kiện thuận lợi cho nhu cầu đi công tác của họ.</h6>
+                    </div>
                     <button type="button" class="btn about--btn">About Us</button>
                 </div>
             </div>
@@ -292,7 +284,7 @@
                     <h5>The Blog</h5>
                     <span class="line gold"></span>
                     <h2>Latest from the <span class="t-gold">Blog</span></h2>
-                    <div class= "container-fluid">                        
+                    <!-- <div class= "container-fluid">                         -->
                         <div class= "row blog--content__review">
                             <div class ="col-12 col-sm-6 col-md-4">
                                 <div class="blog--item">
@@ -341,7 +333,7 @@
 
                             <span class="line-gold"></span>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -546,11 +538,10 @@
     <footer>
         <div class="container">
             <div class="links">
-                <a class="footer-font" href="">Themes</a>
-                <a class="footer-font" href="">Promotions</a>
-                <a class="footer-font" href="">Blogs</a>
-                <a class="footer-font" href="">About</a>
-                <a class="footer-font" href="">Contact</a>
+                <a class="footer-font" href="#">Themes</a>
+                <a class="footer-font" href="Promotions.html">Promotions</a>
+                <a class="footer-font" href="#">Blogs</a>
+                <a class="footer-font" href="About.html">About</a>
             </div>
             <div class="copyright center">2021 - All rights reserved to &copy;Vietnam Experdition</div>
         </div>

@@ -989,7 +989,7 @@ footer .copyright{
     transform: scale(2);
 }
 
-.breadcrumb {
+.about-title {
     text-align: center;
     text-transform: uppercase;
     font-size: 11px;
@@ -1023,10 +1023,12 @@ footer .copyright{
 
 .about-banner--form{
     width: 100%;
-    /* height: 100vh; */
-    padding: 100px 0;
+    height: 30vh;
+    /* padding: 100px 0; */
     object-fit: cover;
     background-image: url('img/back-stayinconnected.jpg');
+    display: flex;
+    justify-content: center;
 }
 
 .about-banner--form i{
@@ -1099,10 +1101,10 @@ a:hover{
     animation: my-transition 2s;
 }
 .light-grey {
-    background: #f6f6f6 !important;
+    background: #f6f6f6;
 }
 .t-white {
-    color: #fff !important;
+    color: #fff;
 }
 
 .timeline-container .img img {
@@ -1114,4 +1116,136 @@ a:hover{
     text-align: center;
     width: 150px;
     margin: 10px auto;
+}
+
+/* Trang Promotion  */
+.promotion{
+    position: relative;
+    height: 30vh;
+    display: flex;
+    padding: 150px 0;
+}
+.promotion-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+.promotion-img-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.promotion-img-back img{
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.promotion-section{
+    position: relative;
+}
+
+.promotion--content{
+    width: 100%;
+    text-align: center;
+}
+
+.promotion--content__banner{
+    width: 100%;
+    position: relative;
+}
+.promotion--content__banner img{
+    width: 100%;
+    object-fit: cover;
+    background-position: bottom;
+    max-height: 300px;
+}
+.promotion--banner__content a{
+    text-decoration: none;
+}
+.promotion--banner__content a:hover{
+    color: #e6ee7c;
+}
+.promotion--banner__content{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-filter-button{
+    display: flex; 
+    justify-content: space-between; 
+    width: 65%; 
+    margin: 0px auto;
+}
+
+.filter-button {  
+    font-size: 16px;    
+    border: 1px solid goldenrod;  
+    border-radius: 5px; 
+    text-align: center; 
+    color: goldenrod; 
+}
+.filter-button:hover {
+    animation: my-transition 2s;
+    border: 1px solid goldenrod;  
+    color: goldenrod;
+}
+.filter-button.active {  
+    background-color: rgba(0, 0, 0, 0);  
+    border: 1px solid rgba(0, 0, 0.4, 0.4);  
+    color: rgba(0, 0, 0.4, 0.4);
+}
+
+.row-promotion{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%; 
+    justify-content: center; 
+    margin: 0px auto;
+}
+
+.row-promotion .col-lg-4{ 
+    padding: 0; 
+    margin: 15px; 
+    width: 350px;
+} 
+
+.promotion-content-img{
+    position: relative; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.promotion-img{
+    width: 100%;
+    height: 440px;
+}
+
+.title{
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.button-group{
+    margin-top: 40px;
 }
