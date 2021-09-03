@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="StyleProsion.css">
+    <title>promo-page</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var width = $(window).width();
+                if (width > 992){
+                    if($(this).scrollTop()){
+                    $('nav').addClass('sticky')
+                    }
+                    else{
+                    $('nav').removeClass('sticky')
+                    }
+                }  
+            })
+        })
+        $(window).resize(function(){
+            var width = $(window).width();
+            console.log(width);
+            if (width < 992){
+                $('nav').addClass('sticky');
+            }
+            else{
+                $('nav').removeClass('sticky');
+            }
+        })
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding:10px 0">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="margin-top: -10px; margin-bottom: -10px;"><img src="logo/logo.png" style="width: 250px; height: auto"></a>
+                <button class="navbar-toggler bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 100%;"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Themes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mountain Tour</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sea Tour</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Island Tour</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Old Town Tour</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promotions</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-envelope navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-Contact"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-user navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignIn"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="fas fa-user-plus navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignUp"></i></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="Promotion">
+            <div class="promotion--content__banner">
+                <img src="img/promo/Nen.jpg" alt="">
+                <div class="promotion--banner__content">
+                    <div class="container">
+                        <a href="Index.html" class="t-gold blog--title">Home</a>/Promotion
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blog--section">
+            <div class="container">
+                <div class="blog--content">
+                    <h5 class="t-black">AROUND THE WORLD</h5>
+                    <span class="line gold"></span>
+                    <h2 class="t-black">It's time to <span class="t-gold">travel</span></h2>
+                    <h6>take a look at the most exxlusive & most visited locations in the world - hand-picked just for you. <br>Start traveling the world today!</h6>
+
+                    <!-- <div class="button-group"> <button class="primary-btn small no-bg t-black border b-black is-checked" data-filter="*">ALL</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".TrungDuMienNuiPhiaBac">Trung du miền núi phía Bắc</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".DongBangSongHong/DuyenHaiDongBac">Đồng bằng sông Hồng/ duyên hải Đông Bắc</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".BacTrungBo">Bắc Trung Bộ</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".DuyenHaiNamTrungBo">Duyên hải Nam Trung Bộ</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".TayNguyen">Tây Nguyên</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".DongNamBo">Đông Nam Bộ</button>
+                        <button class="btn btn-outline-secondary small no-bg t-black border b-black" data-filter=".TayNamBo">Tây Nam Bộ</button>
+                    </div>
+                    <div class="row mt-50 girl">
+                        <div class="col-lg-4 element-item mt-20 TayNamBo"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Nha Trang - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Cap_treo_vinpearl.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 element-item mt-20 TayNguyen"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Đà Lạt - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Da_lat.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 element-item mt-20 BacTrungBo"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Phú Yên - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Ghenh_da_dia.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 element-item mt-20 TayNamBo"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Thừa Thiên Huế - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Lang_An_Bang.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 element-item mt-20 TayNamBo"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Quảng Bình - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Phong_nha_ke_bang.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 element-item mt-20 TayNamBo"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Kiên Giang - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Phu_Quoc.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 element-item mt-20 TayNamBo"style="padding-bottom: 20px;">
+                            <div class="promo-item">
+                                <a href="Tinh.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Quảng Ninh - ROME</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Eternal City</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="img/promo/Vinh_ha_long.jpg" alt="Exodus" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="container"> 
+                        <div class="row"> 
+                         <div > 
+                          <button class="btn btn-default filter-button active" data-filter="all">Tất cả</button> 
+                          <button class="btn btn-light filter-button" data-filter="MienBac">Miền Bắc</button> 
+                          <button class="btn btn-light filter-button" data-filter="designtwo">Miền Trung</button> 
+                          <button class="btn btn-light filter-button" data-filter="designthree">Nam Bộ</button>  
+                         </div> 
+                         <br> 
+                         <div class="row mt-50 girl">
+                            <div class="col-lg-4 element-item mt-20 MienTrung"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="promo gold">
+                                            <span class="t-white">-19%</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Nha Trang - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Cáp treo Vinpearl</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Cap_treo_vinpearl.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 element-item mt-20 MienTrung"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Đà Lạt - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Đồi chè</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Da_lat.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 element-item mt-20 MienTrung"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Phú Yên - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Ghềnh Đá Đĩa</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Ghenh_da_dia.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 element-item mt-20 MienTrung"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Thừa Thiên Huế - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Làng An Bằng</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Lang_An_Bang.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 element-item mt-20 MienTrung"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="promo gold">
+                                            <span class="t-white">-34%</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Quảng Bình - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Phong Nha Kẻ Bàng</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Phong_nha_ke_bang.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 element-item mt-20 MienNam"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="promo gold">
+                                            <span class="t-white">-10%</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Kiên Giang - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Phú Quốc</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Phu_Quoc.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 element-item mt-20 MienBac"style="padding-bottom: 20px;">
+                                <div class="promo-item">
+                                    <a href="Tinh.html" class="link-item">
+                                        <div class="hover-link">
+                                            <span class="primary-btn large black t-snow">more details</span>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="t-gold">Quảng Ninh - ROME</h5>
+                                            <span class="line"></span>
+                                            <h3 class="t-white">Vịnh Hạ Long</h3>
+                                        </div>
+                                    </a>
+                                    <div class="image"><div class="hover"></div><img src="img/promo/Vinh_ha_long.jpg" alt="Exodus" class="img-fluid"></div>
+                                </div>
+                            </div>
+                        </div>
+                       </div> 
+                </div>
+            </div>
+        </div>
+    </section>   
+    <div class="back five">
+        <div class="container center">
+            <h5 class="t-black">Liên hệ</h5>
+            <span class="line gold"></span>
+            <div class="social-container m-20 center">
+                <a href="" class="btn btn-light white icon t-gold"><i class="fab fa-facebook-square"></i></a>
+                <a href="" class="btn btn-light white icon t-gold"><i class="fab fa-instagram"></i></a>
+                <a href="" class="btn btn-light white icon t-gold"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a class="footer-font" href="">Themes</a>
+                <a class="footer-font" href="">Promotions</a>
+                <a class="footer-font" href="">Blogs</a>
+                <a class="footer-font" href="">About</a>
+                <a class="footer-font" href="">Contact</a>
+            </div>
+            <div class="copyright center">2021 - All rights reserved to &copy;Vietnam Experdition</div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $(".filter-button").click(function(){        
+               var value = $(this).attr('data-filter');                
+               if(value == "all"){            
+                    $('.filter').show('1000');}        
+                else{           
+                    $(".filter").not('.'+value).hide('3000');            
+                    $('.filter').filter('.'+value).show('3000');}    });
+       });
+       </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
