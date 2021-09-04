@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap');
 /* Body */
 *{
@@ -73,6 +73,7 @@ body h5{
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 10px 0;
+    font-weight: lighter;
 }
 
 body h6{
@@ -810,7 +811,7 @@ footer .copyright{
 }
 
 .modal-content{
-    margin-top: 0px;
+    border: none;
 }
 
 .modal-header{
@@ -836,7 +837,7 @@ footer .copyright{
 }
 
 .modal-dialog{
-    top: 10%;
+    top: 15%;
 }
 
 .modal-body .modal-body_item{
@@ -1156,26 +1157,28 @@ a:hover{
 .div-filter-button{
     display: flex; 
     justify-content: space-between; 
-    width: 65%; 
-    margin: 0px auto;
+    width: 60%; 
+    margin: 50px auto 0px auto;
 }
 
 .filter-button {  
     font-size: 16px;    
-    border: 1px solid goldenrod;  
+    border: 1px solid black;  
     border-radius: 5px; 
     text-align: center; 
-    color: goldenrod; 
+    color: black; 
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .filter-button:hover {
     animation: my-transition 2s;
-    border: 1px solid goldenrod;  
-    color: goldenrod;
 }
+
 .filter-button.active {  
     background-color: rgba(0, 0, 0, 0);  
-    border: 1px solid rgba(0, 0, 0.4, 0.4);  
-    color: rgba(0, 0, 0.4, 0.4);
+    border: 1px solid rgba(0, 0, 0.4, 0.6);  
+    color: rgba(0, 0, 0.4, 0.6);
 }
 
 .row-promotion{

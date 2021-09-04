@@ -90,6 +90,24 @@
         </div>
     </section>
     <section>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.filter-button').click(function(){
+                    const value =$(this).attr('data-filter');
+                    if (value == 'all'){
+                        $('.col-lg-4').show('1000');
+                    }
+                    else{
+                        $('.col-lg-4').not('.'+value).hide('1000');
+                        $('.col-lg-4').filter('.'+value).show('1000');
+                    }
+                })
+
+                $('.filter-button').click(function(){
+                    $(this).addClass('active').siblings().removeClass('active');
+                })
+            })
+        </script>
         <div class="promotion-section">
                 <div class="promotion--content center paragraph">
                     <h5>Khám phá Việt Nam</h5>
@@ -97,17 +115,17 @@
                     <h2>It's time to <span class="t-gold">travel</span></h2>
                     <h6>Hãy xem những địa điểm hấp dẫn nhất & được ghé thăm nhiều nhất Việt Nam - được chọn thủ công chỉ dành cho bạn.</h6>
                     <div class="div-filter-button"> 
-                    <button class="btn btn-default filter-button active" data-filter="all">Tất cả</button> 
-                    <button class="btn btn-light filter-button" data-filter="mienbac">Miền Bắc</button> 
-                    <button class="btn btn-light filter-button" data-filter="mientrung">Miền Trung</button> 
-                    <button class="btn btn-light filter-button" data-filter="miennam">Nam Bộ</button>  
-                    <button class="btn btn-light filter-button" data-filter="promo" style="background-color: goldenrod; color: white;">Promo</button>  
+                        <button class="filter-button active" data-filter="all">Tất cả</button> 
+                        <button class="filter-button" data-filter="mienbac">Miền Bắc</button> 
+                        <button class="filter-button" data-filter="mientrung">Miền Trung</button> 
+                        <button class="filter-button" data-filter="miennam">Miền Nam</button>  
+                        <button class="filter-button" style="border: 1px solid goldenrod; background-color: goldenrod; color: white;" data-filter="promo">Promo</button>  
                     </div> 
                 </div>
                     <br> 
                     <div class="container">
                         <div class="row mt-5 mb-5 row-promotion">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mientrung">
                                 <div class="promotion-content-img">
                                     <img class="promotion-img" src="img/promo-img/promo-hoi-an.jpg">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
@@ -118,7 +136,7 @@
                                         </div>
                                 </div>       
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 miennam">
                                 <div class="promotion-content-img">
                                     <img class="promotion-img" src="img/promo-img/promo-da-lat.jpg">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
@@ -129,7 +147,7 @@
                                         </div>
                                 </div>       
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mientrung">
                                 <div class="promotion-content-img">
                                     <img class="promotion-img" src="img/promo-img/promo-da-nang.jpg">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
@@ -140,7 +158,7 @@
                                         </div>
                                 </div>       
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mienbac">
                                 <div class="promotion-content-img">
                                     <img class="promotion-img" src="img/promo-img/promo-ha-giang.jpg">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
@@ -151,18 +169,18 @@
                                         </div>
                                 </div>       
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mientrung">
                                 <div class="promotion-content-img">
-                                    <img class="promotion-img" src="img/promo-img/promo-nha-trang.jpg">
+                                    <img class="promotion-img" src="img/promo-img/promo-nha-trang.jpg"">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
                                         <div class="title">
-                                            <h2>Nha Trang</h2>
+                                            <h2 class="t-gold">Nha Trang</h2>
                                             <span class="line black"></span>
-                                            <h6>Thành phố biển</h6>
+                                            <h6 class="t-gold">Thành phố biển</h6>
                                         </div>
                                 </div>       
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mienbac">
                                 <div class="promotion-content-img">
                                     <img class="promotion-img" src="img/promo-img/promo-ninh-binh.jpg">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
@@ -173,7 +191,7 @@
                                         </div>
                                 </div>       
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mienbac">
                                 <div class="promotion-content-img">
                                     <img class="promotion-img" src="img/promo-img/promo-vinh-ha-long.jpg">
                                     <button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button>
