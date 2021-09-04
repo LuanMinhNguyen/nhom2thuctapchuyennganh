@@ -6,11 +6,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .center{
     text-align: center;
 }
+
+.white{
+    background:white;
+}
+
+.black{
+    background-color: black;
+}
+
 .gold{
-    background-color: #ad974f;
+    background-color: goldenrod;
 }
 
 .line{
@@ -27,9 +37,16 @@
     margin: 0px auto;
 }
 
+.t-white {
+    color: white;
+}
+
+.t-black{
+    color: black;
+}
+
 .t-gold{
     color: goldenrod;
-    font-weight: 500;
 }
 
 body{
@@ -40,28 +57,28 @@ body h1{
     font-size: 58px;
     display: block;
     text-transform: uppercase;
+    margin: 10px 0;
 }
 
 body h2{
     font-size: 28px;
     display: block;
     text-transform: uppercase;
+    margin: 10px 0;
 }
 
 body h5{
     font-size: 14px;
-    margin: 50px 0 0 0;
     display: block;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin: 10px 0;
 }
 
 body h6{
     font-size: 18px;
-    color: black;
-    margin-bottom: 50px;
-    text-align: center;
     display: block;
+    margin: 10px 0;
 }
 
 @keyframes my-transition {
@@ -240,6 +257,11 @@ body h6{
 }
 
 /* Promotion Section */
+.promotion--section{
+    position: relative;
+    margin: 100px 0
+}
+
 .promotion--content{
     background-color: white;
     width: 100%;
@@ -282,22 +304,22 @@ body h6{
 }
 
 .btn--viewmore{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: #000;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
     position: absolute;
     display: block;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    left: calc(50% - 75px);
+    top: calc(50% - 30px);
+    width: 150px;
+    height: 60px;
     display: none;
 }
 
 .btn--viewmore:hover{
-    color: #000;
-    background-color: rgba(255, 255, 255, .9);
-    border-color: rgba(255, 255, 255, .9);
+    animation: my-transition 1s;
+   background-color: rgba(0, 0, 0, .7);
+   color: white;
 }
 
 .owl-carousel .item:hover .btn--viewmore{
@@ -305,6 +327,10 @@ body h6{
 }
 
 /* Blog section */
+.blog--section{
+    position: relative;
+    margin: 100px 0;
+}
 
 .blog--content{
     margin-top: 150px;
@@ -376,16 +402,20 @@ body h6{
     padding: 105px 0 0 0;
 }
 
+
 .info-box{
     height: 200px;
 }
 
 .info-box h5{
     letter-spacing: 1px;
+    margin-top: 70px;
 }
 
 .about--section{
     position: relative;
+    margin: 100px 0;
+    padding: 20px 0;
 }
 
 .about--section .center{
@@ -421,7 +451,6 @@ body h6{
 }
 
 .video-back{
-    margin: 71.2px 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -437,6 +466,11 @@ body h6{
 }
 
 /* Testimonial section */
+.testimonial--section{
+    position: relative;
+    margin: 100px auto;
+}
+
 .testimonial--content{
     text-align: center;
 }
@@ -482,16 +516,10 @@ body h6{
     
     body h2{
         font-size: 23px;
-        display: block;
-        text-transform: uppercase;
     }
     
     body h6{
         font-size: 13px;
-        color: black;
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
     }
 
     .carousel-caption .description{
@@ -510,16 +538,10 @@ body h6{
     
     body h2{
         font-size: 24px;
-        display: block;
-        text-transform: uppercase;
     }
     
     body h6{
         font-size: 14px;
-        color: black;
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
     }
 
     .carousel-caption .description{
@@ -538,16 +560,10 @@ body h6{
     
     body h2{
         font-size: 25px;
-        display: block;
-        text-transform: uppercase;
     }
     
     body h6{
         font-size: 15px;
-        color: black;
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
     }
 
     .carousel-caption .description{
@@ -566,16 +582,10 @@ body h6{
     
     body h2{
         font-size: 26px;
-        display: block;
-        text-transform: uppercase;
     }
     
     body h6{
         font-size: 16px;
-        color: black;
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
     }
 
     .carousel-caption .description{
@@ -594,16 +604,10 @@ body h6{
     
     body h2{
         font-size: 27px;
-        display: block;
-        text-transform: uppercase;
     }
     
     body h6{
         font-size: 17px;
-        color: black;
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
     }
 
     .carousel-caption .description{
@@ -622,16 +626,10 @@ body h6{
     
     body h2{
         font-size: 28px;
-        display: block;
-        text-transform: uppercase;
     }
     
     body h6{
         font-size: 18px;
-        color: black;
-        margin-bottom: 50px;
-        text-align: center;
-        display: block;
     }
 
     .carousel-caption .description{
@@ -769,9 +767,7 @@ body h6{
 .m-20 {
 	margin: 20px 0!important;
 }
-.white{
-    background:#fff!important;
-}
+
 .icon{
     padding: 20px !important;
     width: 60px;
@@ -803,7 +799,7 @@ footer .copyright{
     margin-bottom: 30px;
 }
 
-/* Đăng Nhập & Đăng ký*/
+/* form Đăng Nhập & Đăng ký & Liên hệ*/
 .div-btn-close{
     width: 24px; 
     height: 24px; 
@@ -1023,8 +1019,7 @@ footer .copyright{
 
 .about-banner--form{
     width: 100%;
-    height: 30vh;
-    /* padding: 100px 0; */
+    height: 300px;
     object-fit: cover;
     background-image: url('img/back-stayinconnected.jpg');
     display: flex;
@@ -1100,11 +1095,9 @@ a:hover{
 .info-box:hover{
     animation: my-transition 2s;
 }
+
 .light-grey {
     background: #f6f6f6;
-}
-.t-white {
-    color: #fff;
 }
 
 .timeline-container .img img {
@@ -1152,37 +1145,12 @@ a:hover{
 
 .promotion-section{
     position: relative;
+    margin: 100px 0
 }
 
 .promotion--content{
     width: 100%;
     text-align: center;
-}
-
-.promotion--content__banner{
-    width: 100%;
-    position: relative;
-}
-.promotion--content__banner img{
-    width: 100%;
-    object-fit: cover;
-    background-position: bottom;
-    max-height: 300px;
-}
-.promotion--banner__content a{
-    text-decoration: none;
-}
-.promotion--banner__content a:hover{
-    color: #e6ee7c;
-}
-.promotion--banner__content{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .div-filter-button{
@@ -1234,18 +1202,36 @@ a:hover{
 
 .promotion-img{
     width: 100%;
-    height: 440px;
+    height: 450px;
 }
 
 .title{
     position: absolute;
     z-index: 9;
-    bottom: 0;
+    bottom: 10%;
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
 }
 
-.button-group{
-    margin-top: 40px;
+.promo-btn-viewmore{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    position: absolute;
+    display: block;
+    left: calc(50% - 75px);
+    top: calc(50% - 30px);
+    width: 150px;
+    height: 60px;
+    display: none;
+}
+
+.promo-btn-viewmore:hover{
+   animation: my-transition 1s;
+   background-color: rgba(0, 0, 0, .7);
+   color: white;
+}
+
+.row .col-lg-4 .promotion-content-img:hover .promo-btn-viewmore{
+    display: block;
 }

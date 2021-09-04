@@ -5,22 +5,22 @@
 }
 /*Adding background image to each section*/
 .one{
-    background: url(/Project/img/themes-img/themes-da-lat.jpg);
+    background: url(Project/img/themes-img/themes-da-lat.jpg);
     border: 1px rgba(0,0,0,0) solid;
     border-radius: 50px;
 }
 .two{
-    background: url(/Project/img/themes-img/themes-ha-giang.jpg);
+    background: url(Project/img/themes-img/themes-ha-giang.jpg);
     border: 1px rgba(0,0,0,0) solid;
     border-radius: 50px;
 }
 .three{
-    background: url(/Project/img/themes-img/themes-moc-chau.jpg);
+    background: url(Project/img/themes-img/themes-moc-chau.jpg);
     border: 1px rgba(0,0,0,0) solid;
     border-radius: 50px;
 }
 .four{
-    background: url(/Project/img/themes-img/themes-vinh-ha-long.jpg);
+    background: url(Project/img/themes-img/themes-vinh-ha-long.jpg);
     border: 1px rgba(0,0,0,0) solid;
     border-radius: 50px;
 }
