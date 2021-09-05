@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="icon" href="logo/fav-logo.png">
+    <script lang="JavaScript" src="myjavascript.js"></script>
+    <title>Vietnam Experdition | Themes</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var width = $(window).width();
+                if (width > 992){
+                    if($(this).scrollTop()){
+                    $('nav').addClass('sticky')
+                    }
+                    else{
+                    $('nav').removeClass('sticky')
+                    }
+                }  
+            })
+        })
+        $(window).resize(function(){
+            var width = $(window).width();
+            console.log(width);
+            if (width < 992){
+                $('nav').addClass('sticky');
+            }
+            else{
+                $('nav').removeClass('sticky');
+            }
+        })
+    </script>
+    <header>
+        <!--  -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding:10px 0">
+            <div class="container">
+                <a class="navbar-brand" href="Index.html" style="margin-top: -10px; margin-bottom: -10px;"><img src="logo/logo.png" style="width: 250px; height: auto"></a>
+                <button class="navbar-toggler bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 100%;"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="themes.html" style="color: goldenrod;">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Promotions.html">Promotions</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-envelope navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-Contact"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-user navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignIn"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="fas fa-user-plus navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignUp"></i></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Đường line bên này định nghĩa khác với mọi trang. Bên themes.css -->
+    <div class="container-fluid" style="margin-top: 8vh;">
+        <!-- Div with section and active -->
+        <div class="section one active">
+            <div class="section--content">
+                <h2 class="section--title">Du Lịch Miền Núi</h2>
+                <span class="line-gold"></span><br>
+                <p class="description">
+                    Enjoy <i class="keyword">a wonderful day</i> among the moutains
+                </p>
+                <!-- Lấy button bên trang index -->
+                <a href="#moutain"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+            </div>
+        </div>
+        <!-- All another div with section  -->
+        <div class="section two">
+            <div class="section--content">
+                <h2 class="section--title">Du Lịch Biển</h2>
+                <span class="line-gold"></span><br>
+                <p class="description">
+                    Enjoy <i class="keyword">a wonderful vacation</i> on the beach
+                </p>
+                <!-- Lấy button bên trang index -->
+                <a href="#beach"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+            </div>
+        </div>
+        <div class="section three">
+            <div class="section--content">
+                <h2 class="section--title">Du Lịch Phố Cổ</h2>
+                <span class="line-gold"></span><br>
+                <p class="description">
+                    Enjoy <i class="keyword">the fresh life</i> in the countryside
+                </p>
+                <!-- Lấy button bên trang index -->
+                <a href="#oldtown"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+            </div>
+        </div>
+        <div class="section four">
+            <div class="section--content">
+                <h2 class="section--title">Du Lịch Đảo</h2>
+                <span class="line-gold"></span><br>
+                <p class="description">
+                    Admire <i class="keyword">the wonder</i> of the world
+                </p>
+                <!-- Lấy button bên trang index -->
+                <a href="#island"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Selecting all sections with class of section
+        const sections = document.querySelectorAll('.section')
+    
+        // On click event for each section 
+        sections.forEach((section)=>{
+        section.addEventListener('click',()=>{
+            // remove active class from all another section 
+            // and add it to the selected section
+            sections.forEach((section) => {
+                section.classList.remove('active')
+            })
+            section.classList.add('active')
+        })
+        })
+    </script>
+
+    <!-- Du Lịch Biển -->
+    <section id="beach">
+        <div class="container center beach">
+            <h5 class="beach--title">Du lịch biển</h5>
+            <span class="line-gold"></span>
+            <h2 class="beach--heading">Những nơi bạn nên đến khi đi du lịch biển</h2>
+            <div class= "row beach--content">
+                <div class ="col-12 col-sm-6 col-md-4 beach--item">
+                    <img src="img/themes-img/theme-item-vungtau.jpg" alt="">
+                    <p class="beach--content__heading">Thành phố Vũng Tàu</p>
+                    <a href="theme-item.html"><button class="btn btn--view__beach">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-8 beach--item">
+                    <img src="img/themes-img/theme-item-quangngai.jpg" alt="">
+                    <p class="beach--content__heading">Lý Sơn - Giấc mơ có thật ở Quảng Ngãi</p>
+                    <a href="theme-item.html"><button class="btn btn--view__beach">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-8 beach--item">
+                    <img src="img/themes-img/theme-item-phanthiet.jpg" alt="">
+                    <p class="beach--content__heading">Thành Phố Phan Thiết</p>
+                    <a href="theme-item.html"><button class="btn btn--view__beach">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-4 beach--item">
+                    <img src="img/themes-img/theme-img-camranh.jpg" alt="">
+                    <p class="beach--content__heading">Bình Lập Cam Ranh</p>
+                    <a href="theme-item.html"><button class="btn btn--view__beach">View More</button></a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!--Du Lịch Miền Núi -->
+    <section id="moutain">
+        <div class="container center moutain">
+            <h5 class="moutain--title">Du lịch Vùng Cao</h5>
+            <span class="line-gold"></span>
+            <h2 class="moutain--heading">Những nơi bạn nên đến khi đi du lịch vùng cao</h2>
+            <div class= "row moutain--content">
+                <div class ="col-12 col-sm-6 col-md-8 moutain--item">
+                    <img src="img/themes-img/theme-item-hobabe.jpg" alt="">
+                    <p class="moutain--content__heading">Hồ Ba Bể - Thác Bản Giốc</p>
+                    <a href="theme-item.html"><button class="btn btn--view__moutain">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-4 moutain--item">
+                    <img src="img/themes-img/theme-item-doicuu-vungtau.jpg" alt="">
+                    <p class="moutain--content__heading">Đồi Cừu - Vũng Tàu</p>
+                    <a href="theme-item.html"><button class="btn btn--view__moutain">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-4 moutain--item">
+                    <img src="img/themes-img/theme-item-sonla.jpg" alt="">
+                    <p class="moutain--content__heading">Tà Xua - Sơn La</p>
+                    <a href="theme-item.html"><button class="btn btn--view__moutain">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-8 moutain--item">
+                    <img src="img/themes-img/theme-item-bacha-laocai.jpg" alt="">
+                    <p class="moutain--content__heading">Bắc Hà - Lào Cai</p>
+                    <a href="theme-item.html"><button class="btn btn--view__moutain">View More</button></a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Du Lịch Phố Cổ -->
+    <section id="oldtown">
+        <div class="container center oldtown">
+            <h5 class="oldtown--title">Du lịch phố cổ</h5>
+            <span class="line-gold"></span>
+            <h2 class="oldtown--heading">Những nơi bạn nên đến khi đi du phố cổ</h2>
+            <div class= "row oldtown--content">
+                <div class ="col-12 col-sm-6 col-md-4 oldtown--item">
+                    <img src="img/themes-img/theme-item-buivien.jpg" alt="">
+                    <p class="oldtown--content__heading">Phố Đi Bộ Bùi Viện</p>
+                    <a href="theme-item.html"><button class="btn btn--view__oldtown">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-8 oldtown--item">
+                    <img src="img/themes-img/theme-item-tahien-hanoi.jpg" alt="">
+                    <p class="oldtown--content__heading">Phố Tạ Hiện - Hà Nội</p>
+                    <a href="theme-item.html"><button class="btn btn--view__oldtown">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-8 oldtown--item">
+                    <img src="img/themes-img/themes-hoi-an.jpg" alt="">
+                    <p class="oldtown--content__heading">Phố Cổ Hội An</p>
+                    <a href="theme-item.html"><button class="btn btn--view__oldtown">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-4 oldtown--item">
+                    <img src="img/themes-img/theme-item-dongvan-hagiang.jpg" alt="">
+                    <p class="oldtown--content__heading" style="color: goldenrod;">Phố Cổ Đồng Văn - Hà Giang</p>
+                    <a href="theme-item.html"><button class="btn btn--view__oldtown">View More</button></a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Du lịch Đảo -->
+    <section id="island" style="margin-bottom: 50px;">
+        <div class="container center island">
+            <h5 class="island--title">Du lịch Biển Đảo</h5>
+            <span class="line-gold"></span>
+            <h2 class="island--heading">Những nơi bạn nên đến khi đi du lịch biển đảo</h2>
+            <div class= "row island--content">
+                <div class ="col-12 col-sm-6 col-md-8 island--item">
+                    <img src="img/themes-img/theme-item-condao.jpg" alt="">
+                    <p class="island--content__heading">Côn Đảo</p>
+                    <a href="theme-item.html"><button class="btn btn--view__island">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-4 island--item">
+                    <img src="img/themes-img/theme-item-quangngai.jpg" alt="">
+                    <p class="island--content__heading">Lý Sơn - Giấc mơ có thật ở Quảng Ngãi</p>
+                    <a href="theme-item.html"><button class="btn btn--view__island">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-4 island--item">
+                    <img src="img/themes-img/theme-img-phuquoc.jpg" alt="">
+                    <p class="island--content__heading">Đảo Phú Quốc</p>
+                    <a href="theme-item.html"><button class="btn btn--view__island">View More</button></a>
+                </div>
+                <div class ="col-12 col-sm-6 col-md-8 island--item">
+                    <img src="img/themes-img/theme-item-daocatba.jpg" alt="">
+                    <p class="island--content__heading">Đảo Cát Bà</p>
+                    <a href="theme-item.html"><button class="btn btn--view__island">View More</button></a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Liên hệ -->
+        <div class="modal fade" id="staticBackdrop-Contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title t-gold" id="exampleModalLabel">Contact Us</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label" style="font-weight: bold;">Write your feedback:</label>
+                            <textarea class="form-control" id="message-text" rows="7" placeholder="Phản hồi của bạn..."></textarea>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="display: inline-block; text-align: right;">
+                        <div class="modal-footer-contact">
+                            <button type="button" class="btn btn-primary">Send feedback</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Đăng Nhập -->
+        <div class="modal fade" id="staticBackdrop-SignIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header">  
+                        <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng Nhập</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body_item">
+                                <label class="label-email">Email</label>
+                                <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="forget-password">Quên mật khẩu?</a>
+                        <div class="modal-footer-login">
+                            <button type="button" class="btn btn-primary" >Đăng nhập</button>
+                        </div>
+                        <span class="line gold" style="height: 1.5px;"></span>
+                        <p>Đăng nhập với các mạng xã hội khác</p>
+                        <div class="modal-footer-social" style="display: inline-block; justify-content: space-between; width: 240px; text-align: center;">
+                            <div class="social-network-icon" style="border: 2px solid rgb(13, 110, 253)">
+                                <a href="" class="" ><i class="fab fa-facebook-f social-network-icon-scale"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid red">
+                                <a href="" class="" ><i class="fab fa-google-plus-g social-network-icon-scale" style="color: red"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid orange">
+                                <a href="" class="" ><i class="fab fa-instagram social-network-icon-scale" style="color: orange;"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid rgb(29, 155, 240)">
+                                <a href="" class="" ><i class="fab fa-twitter social-network-icon-scale" style="color: rgb(29, 155, 240);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Đăng ký -->
+        <div class="modal fade" id="staticBackdrop-SignUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-header">  
+                        <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng ký</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body_item">
+                                <label class="label-email">Email</label>
+                                <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Nhập lại mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-signup">
+                            <a href=""><button type="button" class="btn btn-primary">Đăng ký</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cop bên trang about -->
+    <section>
+        <div class="about-banner--form">
+            <div class="container center">
+                <h5 style="letter-spacing: 2px; margin-top: 80px;">stay connected</h5>
+                <span class="line gold"></span>
+                <div class="social-container center">
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-facebook-square" style="color: goldenrod;"></i></a>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-linkedin" style="color: goldenrod;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a class="footer-font" href="">Themes</a>
+                <a class="footer-font" href="">Promotions</a>
+                <a class="footer-font" href="">Blogs</a>
+                <a class="footer-font" href="">About</a>
+                <a class="footer-font" href="">Contact</a>
+            </div>
+            <div class="copyright center">2021 - All rights reserved to &copy;Vietnam Experdition</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
