@@ -1385,7 +1385,7 @@ blockquote p{
     border-radius: 50px;
 }
 .two{
-    background: url(img/themes-img/themes-phu-quoc.jpg);
+    background: url(img/themes-img/themes-co-thach.jpg);
     border: 1px rgba(0,0,0,0) solid;
     border-radius: 50px;
 }
@@ -1476,6 +1476,7 @@ html{
     width: 100%;
     height: 300px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .beach--content__heading,
@@ -1483,11 +1484,12 @@ html{
 .island--content__heading,
 .moutain--content__heading{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
     position: absolute;
     left: 35px;
     bottom: -5px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .btn--view__beach,
@@ -1562,4 +1564,149 @@ html{
 
 .like-share button:hover{
     animation: my-transition 2s;
+}
+
+
+/* Box chat */
+.reset{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-boxchat{
+    position:fixed; 
+    width:60px; 
+    height:60px; 
+    border:3px solid goldenrod;
+    border-radius:50%; 
+    background-color: white; 
+    z-index: 10; 
+    bottom: 2%; 
+    right: 2%; 
+    cursor: pointer;
+}
+
+.btn-boxchat:hover{
+    animation: my-transition 2s;
+}
+
+.boxchat-heading{
+    display: flex; 
+    width: 100%; 
+    height: auto; 
+    margin: 0; 
+    border-bottom: 2px solid goldenrod; 
+    padding: 10px;
+}
+
+.boxchat-heading img{
+    border: 0px; 
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px;
+}
+
+.boxchat-heading div{
+    display: block; margin-left: 20px; width: auto; margin: auto 5px;
+}
+
+.boxchat-heading div > h6{
+    margin: 0;
+}
+
+.boxchat-heading div > h5{
+    text-transform: inherit; 
+    margin: 0; 
+    letter-spacing: 0px;
+}
+
+.boxchat-heading div > h5 > i{
+    transform: scale(0.7); 
+    margin: 0 2px 0 0;
+}
+
+.boxchat-heading h5{
+    margin: auto;
+}
+
+.offcanvas-body{
+    width: 100%;
+    padding: 0px;
+}
+
+.boxchat-body{
+    width: 100%; 
+    display: flex; 
+    padding: 10px 15px;
+}
+
+.boxchat-body .user-photo img{
+    border: 0px; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+}
+
+.boxchat-body .chat-message{
+    width: auto;
+    margin: auto 5px; 
+    border: 0px; 
+    background-color: #f2f2f2;
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+.boxchat-body i{
+    margin: auto 0;
+    color: goldenrod;
+}
+
+.admin .chat-message{
+    background-color: aquamarine;
+}
+
+.customer{
+    justify-content: end;
+}
+
+.customer .chat-message{
+    background-color: #f2f2f2;
+    order: -1;
+    text-align: left;
+}
+
+.customer i{
+    order: -2;
+    color: goldenrod;
+}
+
+.boxchat-input{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    margin: 0px;
+    border-radius: 20px;
+    border-top: 2px solid goldenrod;
+}
+
+.boxchat-input input{
+    margin: 10px 0 10px 15px;
+    padding-left: 15px;
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.boxchat-input i{
+    transform: scale(1.5);
+    color: goldenrod;
+    margin: auto 15px;
+}
+
+.boxchat-input i:hover{
+    opacity: .7;
 }
