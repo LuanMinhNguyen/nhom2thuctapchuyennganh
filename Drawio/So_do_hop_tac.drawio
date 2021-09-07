@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-06T18:28:12.066Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="eXiVHeNg-uXXNVTnXyXK" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-07T00:28:50.198Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="OtFdvSg0PsoDy1iebD3I" version="15.1.0" type="github">
   <diagram id="FsRad7_dDyPpwyNSVBpf" name="Page-1">
     <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -129,75 +129,6 @@
         </mxCell>
         <mxCell id="kBAUV18_ilSLkqPBb4wo-17" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;Đăng Ký&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="350" y="240" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-19" value="Khách hàng,&lt;br&gt;Admin" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="458" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-20" value="Thiết bị, Giao Diện" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="458" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-21" value="Hệ Thống" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="650" y="458" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-22" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="kBAUV18_ilSLkqPBb4wo-19" target="kBAUV18_ilSLkqPBb4wo-20" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="140" y="487.9999999999998" as="sourcePoint" />
-            <mxPoint x="190" y="438" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-24" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="479.9999999999998" as="sourcePoint" />
-            <mxPoint x="270" y="479.9999999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-25" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="515" y="479.9999999999998" as="sourcePoint" />
-            <mxPoint x="595.0000000000002" y="479.9999999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-26" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="595.0000000000002" y="496.9999999999998" as="sourcePoint" />
-            <mxPoint x="515" y="496.9999999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-27" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="265" y="496.9999999999998" as="sourcePoint" />
-            <mxPoint x="185" y="496.9999999999998" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-28" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;times new roman&amp;#34; ; font-size: 14px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;1. Nhập thông tin tìm kiếm&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="130" y="450" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-29" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;font face=&quot;times new roman&quot;&gt;2. Kiểm tra&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="450" y="450" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-30" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;times new roman&amp;quot;; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;3. Thông tin tồn tại&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="450" y="497" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-31" value="&lt;font face=&quot;times new roman&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;4. Hiển thị thông tin bài viết&lt;/span&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="130" y="497" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-32" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;times new roman&amp;#34; ; font-size: 14px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;5. Thông tin không tồn tại&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="450" y="527" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-33" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;times new roman&amp;#34; ; font-size: 14px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;6. Thông báo không có bài viết liên quan&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="130" y="527" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="kBAUV18_ilSLkqPBb4wo-28" target="kBAUV18_ilSLkqPBb4wo-28" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="kBAUV18_ilSLkqPBb4wo-35" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;Tìm Kiếm&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="350" y="430" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="bCAmUles-wWCvCAXNEfE-3" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="450" y="487.5" as="sourcePoint" />
-            <mxPoint x="650" y="487.5" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="bCAmUles-wWCvCAXNEfE-4" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
