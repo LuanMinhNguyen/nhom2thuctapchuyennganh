@@ -800,6 +800,10 @@ footer .copyright{
 }
 
 /* form Đăng Nhập & Đăng ký & Liên hệ*/
+.modal .modal-dialog .modal-content .modal-body textarea{
+    resize: none;
+}
+
 .div-btn-close{
     width: 24px; 
     height: 24px; 
@@ -1690,6 +1694,7 @@ html{
     width: 100%; 
     display: flex; 
     padding: 10px 15px;
+    height: auto;
 }
 
 .boxchat-body .user-photo img{
@@ -1718,7 +1723,7 @@ html{
 }
 
 .customer{
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .customer .chat-message{

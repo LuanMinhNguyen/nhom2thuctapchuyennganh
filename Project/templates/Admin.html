@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../static/css/adminstyles.css">
-    <link rel="icon" href="logo/fav-logo.png">
+    <link rel="icon" href="../static/logo/fav-logo.png">
     <title>Vietnam Experdition | Admin</title>
 </head>
 
@@ -18,7 +18,7 @@
         <!-- Sidebar -->
         <div class="bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading">
-                <img src="logo/logo.png" style="width: 200px; height: auto">
+                <img src="../static/logo/logo.png" style="width: 200px; height: auto">
             </div>
             <div class="list-group list-group-flush my-3">
                 <a href="#controls" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active" data-filter="controls">
@@ -31,7 +31,7 @@
                     <i class="fas fa-edit me-2"></i>Quản lý Tour</a>
                 <a href="#newblog" class="list-group-item list-group-item-action bg-transparent second-text fw-bold" data-filter="blogdetails">
                     <i class="fas fa-blog me-2"></i>Quản lý Blogs</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
+                <a href="/" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
                     <i class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
@@ -131,6 +131,22 @@
                 })
             })
         </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.newtour').click(function () {
+                    const value = $(this).attr('data-filter');
+                    if (value == 'all') {
+                        $('.col-lg-5').show('1000');
+                    }
+                    else {
+                        $('.col-lg-5').not('.' + value).hide('1000');
+                        $('.col-lg-5').filter('.' + value).show('1000');
+                    }
+                })
+            })
+        </script>
+
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
@@ -148,7 +164,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Thông tin</a></li>
                                 <li><a class="dropdown-item" href="#">Cài đặt</a></li>
-                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <li><a class="dropdown-item" href="/">Đăng xuất</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -228,7 +244,7 @@
                             <span class="line gold"></span>
                             <div class="all-comment">
                                 <div class="comment">
-                                    <img src="img/view1.jpg" alt="">
+                                    <img src="../static/img/view1.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, fuga?</h6>
@@ -237,7 +253,7 @@
                                 </div>
                 
                                 <div class="comment">
-                                    <img src="img/view2.jpg" alt="">
+                                    <img src="../static/img/view2.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>MARIA De ANDRE'</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias qui, illo incidunt
@@ -248,7 +264,7 @@
                                 </div>
                 
                                 <div class="comment">
-                                    <img src="img/view3.jpg" alt="">
+                                    <img src="../static/img/view3.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>LINDA FALANGY</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque voluptate, ad quos omnis
@@ -260,7 +276,7 @@
                                 </div>
                 
                                 <div class="comment">
-                                    <img src="img/view4.jpg" alt="">
+                                    <img src="../static/img/view4.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>The Hung</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolore. Facere libero quos
@@ -279,7 +295,7 @@
                             <span class="line gold"></span>
                             <div class="reply-comment-form">
                                 <div class="comment">
-                                    <img src="img/view1.jpg" alt="">
+                                    <img src="../static/img/view1.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, fuga?</h6>
@@ -288,21 +304,21 @@
                                 <div class="box-reply-comment">
                                     <h5 style="font-weight: bold; text-align: center;">Phản hồi</h5>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet.</h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ullam!<h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo nulla voluptatum
@@ -314,7 +330,7 @@
                                 </div>
                             </div>
                             <div class="admin-reply">
-                                <img src="img/view5.jpg" alt="">
+                                <img src="../static/img/view5.jpg" alt="">
                                 <textarea name="" id="" cols="30" rows="2"></textarea>
                                 <a href=""><i class="fas fa-paper-plane"></i></a>
                             </div>
@@ -325,7 +341,7 @@
                             <span class="line gold"></span>
                             <div class="reply-comment-form">
                                 <div class="comment">
-                                    <img src="img/view2.jpg" alt="">
+                                    <img src="../static/img/view2.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>MARIA De ANDRE'</h5>
                                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae explicabo placeat necessitatibus quo repellat doloribus enim officiis maiores omnis totam?</h6>
@@ -334,21 +350,21 @@
                                 <div class="box-reply-comment">
                                     <h5 style="font-weight: bold; text-align: center;">Phản hồi</h5>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet.</h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ullam!<h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo nulla voluptatum
@@ -360,7 +376,7 @@
                                 </div>
                             </div>
                             <div class="admin-reply">
-                                <img src="img/view5.jpg" alt="">
+                                <img src="../static/img/view5.jpg" alt="">
                                 <textarea name="" id="" cols="30" rows="2"></textarea>
                                 <a href=""><i class="fas fa-paper-plane"></i></a>
                             </div>
@@ -371,7 +387,7 @@
                             <span class="line gold"></span>
                             <div class="reply-comment-form">
                                 <div class="comment">
-                                    <img src="img/view3.jpg" alt="">
+                                    <img src="../static/img/view3.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>LINDA FALANGY</h5>
                                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id adipisci earum atque quasi hic harum sint tenetur explicabo deserunt, illum quisquam incidunt dolores possimus odio. Provident eius cumque praesentium nisi.</h6>
@@ -380,21 +396,21 @@
                                 <div class="box-reply-comment">
                                     <h5 style="font-weight: bold; text-align: center;">Phản hồi</h5>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet.</h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ullam!<h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo nulla voluptatum
@@ -406,7 +422,7 @@
                                 </div>
                             </div>
                             <div class="admin-reply">
-                                <img src="img/view5.jpg" alt="">
+                                <img src="../static/img/view5.jpg" alt="">
                                 <textarea name="" id="" cols="30" rows="2"></textarea>
                                 <a href=""><i class="fas fa-paper-plane"></i></a>
                             </div>
@@ -417,7 +433,7 @@
                             <span class="line gold"></span>
                             <div class="reply-comment-form">
                                 <div class="comment">
-                                    <img src="img/view4.jpg" alt="">
+                                    <img src="../static/img/view4.jpg" alt="">
                                     <div class="comment-box">
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos soluta optio eos nam. Blanditiis quas autem dignissimos sint, laudantium laboriosam a nesciunt maxime placeat, fuga explicabo sequi veritatis nam nihil sed, reprehenderit enim impedit quis. Vitae quod aliquam sed.</h6>
@@ -426,21 +442,21 @@
                                 <div class="box-reply-comment">
                                     <h5 style="font-weight: bold; text-align: center;">Phản hồi</h5>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet.</h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ullam!<h6>
                                         </div>
                                     </div>
                                     <div class="reply-comment">
-                                        <img src="img/view5.jpg">
+                                        <img src="../static/img/view5.jpg">
                                         <div class="reply-comment-box">
                                             <h5>Admin</h5>
                                             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo nulla voluptatum
@@ -452,7 +468,7 @@
                                 </div>
                             </div>
                             <div class="admin-reply">
-                                <img src="img/view5.jpg" alt="">
+                                <img src="../static/img/view5.jpg" alt="">
                                 <textarea name="" id="" cols="30" rows="2"></textarea>
                                 <a href=""><i class="fas fa-paper-plane"></i></a>
                             </div>
@@ -471,56 +487,56 @@
                             </div>
                             <div class="boxchat-body">
                                 <div class="message" data-filter="view1">
-                                    <img src="img/view1.jpg">
+                                    <img src="../static/img/view1.jpg">
                                     <div>
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, vitae.</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view2">
-                                    <img src="img/view2.jpg">
+                                    <img src="../static/img/view2.jpg">
                                     <div>
                                         <h5>MARIA De ANDRE'</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium necessitatibus reprehenderit repellat magni quas quaerat error, fugit similique iusto. Iure?</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view3">
-                                    <img src="img/view3.jpg">
+                                    <img src="../static/img/view3.jpg">
                                     <div>
                                         <h5>LINDA FALANGY</h5>
                                         <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita saepe sapiente quam iste veniam!</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view4">
-                                    <img src="img/view4.jpg">
+                                    <img src="../static/img/view4.jpg">
                                     <div>
                                         <h5>The Hung</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, vitae.</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view1">
-                                    <img src="img/view1.jpg">
+                                    <img src="../static/img/view1.jpg">
                                     <div>
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, vitae.</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view2">
-                                    <img src="img/view2.jpg">
+                                    <img src="../static/img/view2.jpg">
                                     <div>
                                         <h5>MARIA De ANDRE'</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium necessitatibus reprehenderit repellat magni quas quaerat error, fugit similique iusto. Iure?</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view3">
-                                    <img src="img/view3.jpg">
+                                    <img src="../static/img/view3.jpg">
                                     <div>
                                         <h5>LINDA FALANGY</h5>
                                         <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita saepe sapiente quam iste veniam!</h6>
                                     </div>
                                 </div>
                                 <div class="message" data-filter="view4">
-                                    <img src="img/view4.jpg">
+                                    <img src="../static/img/view4.jpg">
                                     <div>
                                         <h5>The Hung</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, vitae.</h6>
@@ -536,7 +552,7 @@
                             </div>
                             <div class="reply-message-body">
                                 <div class="other-message">
-                                    <img src="img/view1.jpg" alt="">
+                                    <img src="../static/img/view1.jpg" alt="">
                                     <div>
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Hello !</h6>
@@ -544,7 +560,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Can I help you ?</h6>
@@ -552,7 +568,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="other-message">
-                                    <img src="img/view1.jpg" alt="">
+                                    <img src="../static/img/view1.jpg" alt="">
                                     <div>
                                         <h5>JOHN E. PERRY</h5>
                                         <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sed, suscipit impedit accusantium veniam in reprehenderit repellat a animi porro.</h6>
@@ -560,7 +576,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi alias in quasi rerum nesciunt iure laborum, eos voluptatem porro modi, nisi dolorum repellendus illo vero optio! Culpa reprehenderit quae excepturi! Rerum cum architecto iusto dolor aliquam magnam praesentium neque, ratione maxime, eveniet necessitatibus explicabo alias dicta corporis nesciunt debitis ducimus.</h6>
@@ -582,7 +598,7 @@
                             </div>
                             <div class="reply-message-body">
                                 <div class="other-message">
-                                    <img src="img/view2.jpg" alt="">
+                                    <img src="../static/img/view2.jpg" alt="">
                                     <div>
                                         <h5>MARIA De ANDRE'</h5>
                                         <h6>Hello !</h6>
@@ -590,7 +606,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Can I help you ?</h6>
@@ -598,7 +614,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="other-message">
-                                    <img src="img/view2.jpg" alt="">
+                                    <img src="../static/img/view2.jpg" alt="">
                                     <div>
                                         <h5>MARIA De ANDRE'</h5>
                                         <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sed, suscipit impedit accusantium veniam in reprehenderit repellat a animi porro.</h6>
@@ -606,7 +622,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus sunt repudiandae maxime facilis quam, expedita cum ut necessitatibus debitis, accusamus molestias perferendis, similique autem quaerat assumenda a praesentium corrupti obcaecati reiciendis. Vel quisquam eius iusto inventore, debitis, odio nihil tempora labore officia reiciendis quas quo. Eveniet quidem fugiat vitae? Ab neque praesentium recusandae error quis vitae repudiandae quos soluta animi?</h6>
@@ -628,7 +644,7 @@
                             </div>
                             <div class="reply-message-body">
                                 <div class="other-message">
-                                    <img src="img/view3.jpg" alt="">
+                                    <img src="../static/img/view3.jpg" alt="">
                                     <div>
                                         <h5>LINDA FALANGY</h5>
                                         <h6>Hello !</h6>
@@ -636,7 +652,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Can I help you ?</h6>
@@ -644,7 +660,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="other-message">
-                                    <img src="img/view3.jpg" alt="">
+                                    <img src="../static/img/view3.jpg" alt="">
                                     <div>
                                         <h5>LINDA FALANGY</h5>
                                         <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sed, suscipit impedit accusantium veniam in reprehenderit repellat a animi porro.</h6>
@@ -652,7 +668,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi alias in quasi rerum nesciunt iure laborum, eos voluptatem porro modi, nisi dolorum repellendus illo vero optio! Culpa reprehenderit quae excepturi! Rerum cum architecto iusto dolor aliquam magnam praesentium neque, ratione maxime, eveniet necessitatibus explicabo alias dicta corporis nesciunt debitis ducimus.</h6>
@@ -674,7 +690,7 @@
                             </div>
                             <div class="reply-message-body">
                                 <div class="other-message">
-                                    <img src="img/view4.jpg" alt="">
+                                    <img src="../static/img/view4.jpg" alt="">
                                     <div>
                                         <h5>The Hung</h5>
                                         <h6>Hello !</h6>
@@ -682,7 +698,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Can I help you ?</h6>
@@ -690,7 +706,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="other-message">
-                                    <img src="img/view4.jpg" alt="">
+                                    <img src="../static/img/view4.jpg" alt="">
                                     <div>
                                         <h5>The Hung</h5>
                                         <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sed, suscipit impedit accusantium veniam in reprehenderit repellat a animi porro.</h6>
@@ -698,7 +714,7 @@
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="admin-message">
-                                    <img src="img/view5.jpg" alt="">
+                                    <img src="../static/img/view5.jpg" alt="">
                                     <div>
                                         <h5>Nguyễn Minh Luân</h5>
                                         <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dicta possimus magni eum delectus reprehenderit. Amet repudiandae, et officia architecto tempore laborum porro magni, laboriosam harum deserunt hic expedita eius itaque fugit officiis obcaecati soluta nostrum autem voluptate saepe excepturi assumenda. Distinctio voluptates fugit, eius, repudiandae dolorem a libero id, blanditiis facere nam ipsam. Sapiente quia consequatur fugit necessitatibus quidem aliquam rerum nemo error in? Cum molestiae odio exercitationem iste omnis odit ab consequatur laboriosam quibusdam vitae laudantium, veritatis quis quae eligendi autem ad eveniet ex nisi beatae laborum magni vero consectetur! Tenetur quam officiis hic repellendus odit. Modi, error?</h6>
@@ -790,6 +806,15 @@
                                         <button class="btn btn-deletetour" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-trash-alt"></i></button>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td colspan="4"><button class="btn btn-primary newtour" style="margin: 10px auto;
+                                        padding: 10px;
+                                        border: 0px;
+                                        border-radius: 10px;
+                                        background-color: goldenrod;
+                                        color: white;
+                                        font-size: 16px;" data-filter="dtpnewtour">Thêm Tour Mới</button></td>
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -800,6 +825,16 @@
                             <input type="text" placeholder="Hình Ảnh Miêu Tả Tour (URL)">
                             <textarea cols="30" rows="10" placeholder="Nhập nội dung mới"></textarea>
                             <button class="btn"><h5>Xác Nhận Chỉnh Sửa</h5></button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 dtpnewtour" style="display: none;">
+                        <div class="container edittour-form">
+                            <h2>Nội Dung Tour Mới</h2>
+                            <input type="text" placeholder="Tên Tour">
+                            <input type="text" placeholder="Hình Ảnh Miêu Tả Tour (URL)">
+                            <textarea cols="30" rows="10" placeholder="Nhập nội dung mô tả Tour"></textarea>
+                            <button class="btn"><h5>Xác Nhận</h5></button>
                         </div>
                     </div>
                 </div>

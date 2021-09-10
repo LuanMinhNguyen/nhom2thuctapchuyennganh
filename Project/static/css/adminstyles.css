@@ -992,7 +992,7 @@ body::-webkit-scrollbar{
   font-size: 28px;
 }
 
-.dtptour{
+.dtptour,.dtpnewtour{
   background-color: aquamarine;
   height: auto;
 }
