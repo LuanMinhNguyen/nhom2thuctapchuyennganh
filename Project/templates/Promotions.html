@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/mystyle.css">
+    <link rel="icon" href="../static/logo/fav-logo.png">
+    <script lang="JavaScript" src="../static/js/myjavascript.js"></script>
+    <title>Vietnam Experditon | Promotion</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var width = $(window).width();
+                if (width > 992){
+                    if($(this).scrollTop()){
+                    $('nav').addClass('sticky')
+                    }
+                    else{
+                    $('nav').removeClass('sticky')
+                    }
+                }  
+            })
+        })
+        $(window).resize(function(){
+            var width = $(window).width();
+            console.log(width);
+            if (width < 992){
+                $('nav').addClass('sticky');
+            }
+            else{
+                $('nav').removeClass('sticky');
+            }
+        })
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding:10px 0">
+            <div class="container">
+                <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -10px;"><img src="../static/logo/logo.png" style="width: 250px; height: auto"></a>
+                <button class="navbar-toggler bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 100%;"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/themes">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/promotions" style="color: goldenrod;">Promotions</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-envelope navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-Contact"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-user navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignIn"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="fas fa-user-plus navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignUp"></i></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="btn-boxchat" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fas fa-comments t-gold"></i>
+        </div>
+        <div class="offcanvas offcanvas-end reset" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header reset">
+                <div class="boxchat-heading">
+                    <img src="../static/img/view5.jpg">
+                    <div>
+                        <h6>Nguyễn Minh Luân</h6>
+                        <h5 class="t-gold"><i class="fas fa-circle t-gold"></i>Đang hoạt động</h5>
+                    </div>
+                    <h5 class="t-gold"><i class="fas fa-star"></i>Admin</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="boxchat-body customer">
+                    <div class="user-photo">
+                        <img src="../static/img/view3.jpg">
+                    </div>
+                    <p class="chat-message">Hello !!!</p>
+                    <i class="fas fa-check-square"></i>
+                </div>
+                <div class="boxchat-body admin">
+                    <div class="user-photo">
+                        <img src="../static/img/view5.jpg">
+                    </div>
+                    <p class="chat-message">Bạn cần giúp gì ?</p>
+                    <i class="fas fa-check-square"></i>
+                </div>
+                <div class="boxchat-body customer">
+                    <div class="user-photo">
+                        <img src="../static/img/view3.jpg">
+                    </div>
+                    <p class="chat-message">Mình cần tư vấn chọn Tour nghỉ dưỡng.</p>
+                    <i class="far fa-check-square"></i>
+                </div>
+                <div class="boxchat-input">
+                    <input type="text" placeholder="Nhập tin nhắn của bạn...">
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="promotion">
+            <div class="container center">
+                <div class="promotion-title t-white">
+                    <a class="fw-bold" href="/" style="color: black;">Home</a> / Promotions
+                </div> 
+            </div>
+            <div class="promotion-img-back">
+                <img src="../static/img/promo-background.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.filter-button').click(function(){
+                    const value =$(this).attr('data-filter');
+                    if (value == 'all'){
+                        $('.col-lg-4').show('1000');
+                    }
+                    else{
+                        $('.col-lg-4').not('.'+value).hide('1000');
+                        $('.col-lg-4').filter('.'+value).show('1000');
+                    }
+                })
+
+                $('.filter-button').click(function(){
+                    $(this).addClass('active').siblings().removeClass('active');
+                })
+            })
+        </script>
+        <div class="promotion-section">
+                <div class="promotion--content center paragraph">
+                    <h5>Khám phá Việt Nam</h5>
+                    <span class="line gold"></span>
+                    <h2>It's time to <span class="t-gold">travel</span></h2>
+                    <h6>Hãy xem những địa điểm hấp dẫn nhất & được ghé thăm nhiều nhất Việt Nam - được chọn thủ công chỉ dành cho bạn.</h6>
+                    <div class="div-filter-button"> 
+                        <button class="filter-button active" data-filter="all">Tất cả</button> 
+                        <button class="filter-button" data-filter="mienbac">Miền Bắc</button> 
+                        <button class="filter-button" data-filter="mientrung">Miền Trung</button> 
+                        <button class="filter-button" data-filter="miennam">Miền Nam</button>  
+                        <button class="filter-button" style="border: 1px solid goldenrod; background-color: goldenrod; color: white;" data-filter="promo">Promo</button>  
+                    </div> 
+                </div>
+                    <br> 
+                    <div class="container">
+                        <div class="row mt-5 mb-5 row-promotion">
+                            <div class="col-lg-4 mientrung promo">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-hoi-an.jpg">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="tag">
+                                            <h5 class="t-white">-15%</h5>
+                                        </div>
+                                        <div class="title">
+                                            <h2 class="t-white">Hội An</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Phố cổ</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                            <div class="col-lg-4 miennam">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-da-lat.jpg">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="title">
+                                            <h2 class="t-white">Đà Lạt</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Phố mù sương</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                            <div class="col-lg-4 mientrung">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-da-nang.jpg">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="title">
+                                            <h2 class="t-white">Đà Nẵng</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Thành phố biển</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                            <div class="col-lg-4 mienbac promo">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-ha-giang.jpg">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="tag">
+                                            <h5 class="t-white">-35%</h5>
+                                        </div>
+                                        <div class="title">
+                                            <h2 class="t-white">Hà Giang</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Miền cao</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                            <div class="col-lg-4 mienbac">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-mu-cang-chai.jpg"">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="title">
+                                            <h2 class="t-white">Mù Cang Chải</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Miền cao</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                            <div class="col-lg-4 mienbac promo">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-ninh-binh.jpg">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="tag">
+                                            <h5 class="t-white">-20%</h5>
+                                        </div>
+                                        <div class="title">
+                                            <h2 class="t-white">Ninh Bình</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Nông thôn</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                            <div class="col-lg-4 mienbac">
+                                <div class="promotion-content-img">
+                                    <img class="promotion-img" src="../static/img/promo-img/promo-vinh-ha-long.jpg">
+                                    <a href="/themes_item"><button class="btn promo-btn-viewmore"><h5>Xem thêm</h5></button></a>
+                                        <div class="title">
+                                            <h2 class="t-white">Vịnh Hạ Long</h2>
+                                            <span class="line white"></span>
+                                            <h6 class="t-white">Kỳ quan</h6>
+                                        </div>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section> 
+    <section>
+        <div class="about-banner--form">
+            <div class="container center">
+                <div style="margin: 86px auto;">
+                    <h5 style="letter-spacing: 2px;">Stay connected</h5>
+                    <span class="line gold"></span>
+                    <div class="social-container m-20 center">
+                        <div>
+                            <a href="" class="btn btn-light icon"><i class="fab fa-facebook-f" style="color: goldenrod;"></i></a>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-light icon"><i class="fab fa-google-plus-g" style="color: goldenrod;"></i></a>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-light icon"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-light icon"><i class="fab fa-twitter" style="color: goldenrod;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- Liên hệ -->
+        <div class="modal fade" id="staticBackdrop-Contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title t-gold" id="exampleModalLabel">Contact Us</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label" style="font-weight: bold;">Write your feedback:</label>
+                            <textarea class="form-control" id="message-text" rows="7" placeholder="Phản hồi của bạn..."></textarea>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="display: inline-block; text-align: right;">
+                        <div class="modal-footer-contact">
+                            <button type="button" class="btn btn-primary">Send feedback</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Đăng Nhập -->
+        <div class="modal fade" id="staticBackdrop-SignIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header">  
+                        <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng Nhập</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body_item">
+                                <label class="label-email">Email</label>
+                                <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="forget-password">Quên mật khẩu?</a>
+                        <div class="modal-footer-login">
+                            <button type="button" class="btn btn-primary" >Đăng nhập</button>
+                        </div>
+                        <span class="line gold" style="height: 1.5px;"></span>
+                        <p>Đăng nhập với các mạng xã hội khác</p>
+                        <div class="modal-footer-social" style="display: inline-block; justify-content: space-between; width: 240px; text-align: center;">
+                            <div class="social-network-icon" style="border: 2px solid rgb(13, 110, 253)">
+                                <a href="" class="" ><i class="fab fa-facebook-f social-network-icon-scale"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid red">
+                                <a href="" class="" ><i class="fab fa-google-plus-g social-network-icon-scale" style="color: red"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid orange">
+                                <a href="" class="" ><i class="fab fa-instagram social-network-icon-scale" style="color: orange;"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid rgb(29, 155, 240)">
+                                <a href="" class="" ><i class="fab fa-twitter social-network-icon-scale" style="color: rgb(29, 155, 240);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Đăng ký -->
+        <div class="modal fade" id="staticBackdrop-SignUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-header">  
+                        <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng ký</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body_item">
+                                <label class="label-email">Email</label>
+                                <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Nhập lại mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-signup">
+                            <a href=""><button type="button" class="btn btn-primary">Đăng ký</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a class="footer-font" href="/themes">Themes</a>
+                <a class="footer-font" href="/promotions">Promotions</a>
+                <a class="footer-font" href="/blogs">Blogs</a>
+                <a class="footer-font" href="/about">About</a>
+            </div>
+            <div class="copyright center">2021 - All rights reserved to &copy;Vietnam Experdition</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

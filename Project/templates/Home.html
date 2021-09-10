@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/mystyle.css">
+    <link rel="icon" href="../static/logo/fav-logo.png">
+    <script lang="JavaScript" src="../static/js/myjavascript.js"></script>
+    <title>Vietnam Experdition | Homepage</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var width = $(window).width();
+                if (width > 992){
+                    if($(this).scrollTop()){
+                    $('nav').addClass('sticky')
+                    }
+                    else{
+                    $('nav').removeClass('sticky')
+                    }
+                }  
+            })
+        })
+        $(window).resize(function(){
+            var width = $(window).width();
+            if (width < 992){
+                $('nav').addClass('sticky');
+            }
+            else{
+                $('nav').removeClass('sticky');
+            }
+        })
+    </script>
+    <header>
+        <!--  -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding:10px 0">
+            <div class="container">
+                <a class="navbar-brand" href="/" style="margin-top: -10px; margin-bottom: -10px;"><img src="../static/logo/logo.png" style="width: 250px; height: auto"></a>
+                <button class="navbar-toggler bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="width: 100%;"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/themes">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/promotions">Promotions</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/themes_item">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-envelope navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-Contact"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="far fa-user navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignIn"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;"><i class="fas fa-user-plus navbar-icon-scale" data-bs-toggle="modal" href="#staticBackdrop-SignUp"></i></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="btn-boxchat" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fas fa-comments t-gold"
+                style="font-size: 28px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);"></i>
+        </div>
+        <div class="offcanvas offcanvas-end reset" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header reset">
+                <div class="boxchat-heading">
+                    <img src="../static/img/view5.jpg">
+                    <div>
+                        <h6>Nguyễn Minh Luân</h6>
+                        <h5 class="t-gold"><i class="fas fa-circle t-gold"></i>Đang hoạt động</h5>
+                    </div>
+                    <h5 class="t-gold"><i class="fas fa-star"></i>Admin</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="boxchat-body customer">
+                    <div class="user-photo">
+                        <img src="../static/img/view3.jpg">
+                    </div>
+                    <p class="chat-message">Hello !!!</p>
+                    <i class="fas fa-check-square"></i>
+                </div>
+                <div class="boxchat-body admin">
+                    <div class="user-photo">
+                        <img src="../static/img/view5.jpg">
+                    </div>
+                    <p class="chat-message">Bạn cần giúp gì ?</p>
+                    <i class="fas fa-check-square"></i>
+                </div>
+                <div class="boxchat-body customer">
+                    <div class="user-photo">
+                        <img src="../static/img/view3.jpg">
+                    </div>
+                    <p class="chat-message">Mình cần tư vấn chọn Tour nghỉ dưỡng.</p>
+                    <i class="far fa-check-square"></i>
+                </div>
+                <div class="boxchat-body customer">
+                    <div class="user-photo">
+                        <img src="../static/img/view3.jpg">
+                    </div>
+                    <p class="chat-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic earum asperiores quasi quibusdam dolorem commodi, odio explicabo modi sunt molestias sequi mollitia ut eos nam enim similique facilis deleniti ea, deserunt nulla itaque quae aperiam quod possimus! Iste aperiam quam, error deleniti possimus reprehenderit laboriosam quidem veniam ipsam debitis vero sapiente dolorem molestias enim fugiat, ullam officia doloribus natus necessitatibus, neque labore rerum blanditiis obcaecati et. Aspernatur fugit quod ullam, temporibus iusto beatae! Optio reiciendis ipsam porro sunt vel! Nulla?</p>
+                    <i class="far fa-check-square"></i>
+                </div>
+            </div>
+            <div class="boxchat-input">
+                <input type="text" placeholder="Nhập tin nhắn của bạn...">
+                <i class="fas fa-paperclip"></i>
+                <i class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../static/img/themes-img/themes-ha-giang.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h5>HÀ GIANG</h5>
+                    <span class="title-line"></span>
+                    <p class="description">Enjoy<i class="keyword"> a wonderful day</i> among the mountains</p>
+                    <a href="/themes_item"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../static/img/themes-img/themes-vinh-ha-long.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>VỊNH HẠ LONG</h5>
+                  <span class="title-line"></span>
+                  <p class="description">Admire<i class="keyword"> the wonder</i> of the world</p>
+                   <a href="/themes_item"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../static/img/themes-img/themes-da-lat.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>ĐÀ LẠT</h5>
+                  <span class="title-line"></span>
+                  <p class="description"><i class="keyword">Great</i> holiday in the foggy city</p>
+                   <a href="/themes_item"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../static/img/themes-img/themes-moc-chau.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>MỘC CHÂU</h5>
+                  <span class="title-line"></span>
+                  <p class="description"><i class="keyword">Peaceful</i> countryside life</p>
+                  <a href="/themes_item"><button type="button" class="btn btn-outline-secondary">View More</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+        <div class="promotion--section">
+            <div class="container">
+                <div class="promotion--content justify-content-center">
+                    <div>
+                        <h5>Vòng Quanh Việt Nam</h5>
+                        <span class="line gold"></span>
+                        <h2>It's time to <span class="t-gold">Travel</span></h2>
+                        <div style="display: block; margin: 0px auto; width: 60%;">
+                            <h6>
+                                Đã đến lúc đi du lịch. Hãy xem những địa điểm độc nhất và được ghé thăm nhiều nhất trên Việt Nam - được chọn chỉ dành cho bạn.
+                                <br><br>
+                                Bắt đầu khám phá ngay hôm nay!
+                            </h6>
+                        </div>
+                    </div>
+                    <!-- promotion slider -->
+                    <script>
+                        $(document).ready(function(){
+                            $('.owl-carousel').owlCarousel({
+                                center: true,
+                                items:2,
+                                loop:true,
+                                margin:20,
+                                autoWidth:true,
+                                autoplay:true,
+                                autoplayTimeout:5000,
+                                responsive:{
+                                    0 : {
+                                        items:2
+                                    },
+                                    600 : {
+                                        items:3
+                                    },
+                                    900 : {
+                                        items:4
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                    <div id="promotion--slider">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-da-nang.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Đà Nẵng</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-hoi-an.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Hội An</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-da-lat.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Đà Lạt</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-vinh-ha-long.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Vịnh Hạ Long</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-mu-cang-chai.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Mù Cang Chải</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-ha-giang.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Hà Giang</p>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <img src="../static/img/promo-img/promo-ninh-binh.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a href="/blogocean">
+                                        <button class="btn btn--viewmore">View More</button>
+                                    </a>
+                                </div>
+                                <p class="item--title">Ninh Bình</p>
+                            </div> 
+                        </div>
+                        <a href="/promotions">
+                            <button type="button" class="btn promotion-btn">View ALL Promotion</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="about--section">
+            <div class="container">
+                <div class="about--content center">
+                    <h5>The Agency</h5>
+                    <span class="line gold"></span>
+                    <h2>Khám phá<span class="t-gold"> Việt Nam</span></h2>
+                    <div style="display: block; margin: 0px auto; width: 60%;">
+                        <h6>Đam mê du lịch và chia sẻ<span class="t-gold"> những điều kỳ diệu</span> của Việt Nam trên khía cạnh du lịch giải trí. Chúng tôi cung cấp dịch vụ hi-touch cho khách du lịch doanh nghiệp để tạo điều kiện thuận lợi cho nhu cầu đi công tác của họ.</h6>
+                    </div>
+                    <a href="/about"><button type="button" class="btn about--btn"><i class="fas fa-info"></i> About Us</button></a>
+                </div>
+            </div>
+            <div class="video-back">
+                <div class="color-overlay op-7"></div>
+                <video autoplay="" loop="" muted="" >
+                    <source src="../static/img/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="blog--section">
+            <div class="container">
+                <div class="blog--content">
+                    <h5>The Blog</h5>
+                    <span class="line gold"></span>
+                    <h2>Latest from the <span class="t-gold">Blog</span></h2>
+                    <div class= "row blog--content__review">
+                        <div class ="col-12 col-sm-6 col-md-4">
+                            <div class="blog--item">
+                                <a href="/blogocean">
+                                    <img src="../static/img/blog-img/blog-phan-thiet.jpg" alt="">
+                                </a>
+                                <h3 class="blog--item__title">Deep inside "Sand Ocean"</h3>
+                                <p>By: <span class="t-gold">Nguyễn Minh Luân</span></p>
+                                <div class="blog--item_view">
+                                    <img src="../static/img/view1.jpg" alt="">
+                                    <img src="../static/img/view2.jpg" alt="">
+                                    <img src="../static/img/view3.jpg" alt="">
+                                    <span class="views">+1850</span>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col-12 col-sm-6 col-md-4">
+                            <div class="blog--item">
+                                <a href="/blogocean">
+                                    <img src="../static/img/blog-img/blog-ha-noi.jpg" alt="">
+                                </a>
+                                <h3 class="blog--item__title">Cuộc sống ở Thủ Đô</h3>
+                                <p>By: <span class="t-gold">Lê Hồng Phong</span></p>
+                                <div class="blog--item_view">
+                                    <img src="../static/img/view2.jpg" alt="">
+                                    <img src="../static/img/view1.jpg" alt="">
+                                    <span class="views">+2351</span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class ="col-12 col-sm-6 col-md-4">
+                            <div class="blog--item">
+                                <a href="/blogocean">
+                                    <img src="../static/img/blog-img/blog-sapa.jpg" alt="">
+                                </a>
+                                <h3 class="blog--item__title">Ở miền cao có lạnh ?</h3>
+                                <p>By: <span class="t-gold">Nguyễn Đình Nhật</span></p>
+                                <div class="blog--item_view">
+                                    <img src="../static/img/view3.jpg" alt="">
+                                    <img src="../static/img/view1.jpg" alt="">
+                                    <img src="../static/img/view2.jpg" alt="">
+                                    <span class="views">+2001</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 100px; margin-left: 20%; margin-right: 20%; width: 60%;">
+                <span class="line gold" style="width: 100%;"></span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="testimonial--section" style="margin-bottom: 100px;">
+            <div class="container">
+                <div class="testimonial--content">
+                    <h5>testimonial</h5>
+                    <span class="line gold"></span>
+                    <h2>Our clients <span class="t-gold">say:</span></h2>
+                    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" style="background-color: #ad974f;" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2" style="background-color: #ad974f;"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3" style="background-color: #ad974f;"></button>
+                        </div>
+                        <div class="carousel-inner testimonial--clients">
+                          <div class="carousel-item active">
+                            <img src="../static/img/view1.jpg" class="d-block" alt="...">
+                            <div class="testimonial--clients__info">
+                                <h6>A must-have template. Maybe one of the best vintage templates so far in the market. Recommended 100%.</h6>
+                                <p class="testimonial--clients__name">JOHN E. PERRY</p>
+                                <span class="testimonial--clients__job">Moravian Ltd - CEO</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../static/img/view2.jpg" class="d-block" alt="...">
+                              <div class="testimonial--clients__info">
+                                <h6>Extremelly flexible and easy to use. Code is clean and all files well organized. Great job guys.</h6>
+                                <p class="testimonial--clients__name">MARIA De ANDRE'</p>
+                                <span class="testimonial--clients__job">Artist</span>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../static/img/view3.jpg" class="d-block" alt="...">
+                              <div class="testimonial--clients__info">
+                                <h6>Fast, easy, reliable, fun, flexible, modern. Many options, colors, widgets. +++</h6>
+                                <p class="testimonial--clients__name">LINDA FALANGY</p>
+                                <span class="testimonial--clients__job">Graphic Designer</span>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="banner--form">
+            <div class="container center">
+                <div class="banner--form__signup" style="margin-bottom: 100px ">
+                    <h5 class="t-gold">News Letter</h5>
+                    <span class="line-black"></span>
+                    <h2>Don't <span class="t-gold">miss</span> it!</h2>
+                    <h6>Kết nối với chúng tôi để biết các chương trình khuyến mãi đặc biệt và cập nhật thú vị.</h6>
+                    <div id="fields">
+                        <form id="contact--form">
+                            <div class="controls">
+                                <div class="form-group">
+                                    <div class="input--item form-group has-erro has-danger">
+                                        <input type="email" name="email" id="form--email" class="form-control" placeholder="Email address" required="required" data-error="Valid email is required.">
+                                        <input type="submit" name="submit" id="form--submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <h5 style="font-weight: bold; letter-spacing: 2px;">stay connected</h5>
+                <span class="line gold"></span>
+                <div class="social-container center">
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-facebook-f" style="color: goldenrod;"></i></a>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-google-plus-g" style="color: goldenrod;"></i></a>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-instagram" style="color: goldenrod;"></i></a>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-light icon"><i class="fab fa-twitter" style="color: goldenrod;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section>
+        <!-- Liên hệ -->
+        <div class="modal fade" id="staticBackdrop-Contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title t-gold" id="exampleModalLabel">Contact Us</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label" style="font-weight: bold;">Write your feedback:</label>
+                            <textarea class="form-control" id="message-text" rows="10" placeholder="Phản hồi của bạn..." style="resize: none;"></textarea>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="display: inline-block; text-align: right;">
+                        <div class="modal-footer-contact">
+                            <button type="button" class="btn btn-primary">Send feedback</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Đăng Nhập -->
+        <div class="modal fade" id="staticBackdrop-SignIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-header">  
+                        <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng Nhập</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body_item">
+                                <label class="label-email">Email</label>
+                                <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="forget-password">Quên mật khẩu?</a>
+                        <div class="modal-footer-login">
+                            <a href="/admin"><button type="button" class="btn btn-primary" >Đăng nhập</button></a>
+                        </div>
+                        <span class="line gold" style="height: 1.5px;"></span>
+                        <p>Đăng nhập với các mạng xã hội khác</p>
+                        <div class="modal-footer-social" style="display: inline-block; justify-content: space-between; width: 240px; text-align: center;">
+                            <div class="social-network-icon" style="border: 2px solid rgb(13, 110, 253)">
+                                <a href="" class="" ><i class="fab fa-facebook-f social-network-icon-scale"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid red">
+                                <a href="" class="" ><i class="fab fa-google-plus-g social-network-icon-scale" style="color: red"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid orange">
+                                <a href="" class="" ><i class="fab fa-instagram social-network-icon-scale" style="color: orange;"></i></a>
+                            </div>
+                            <div class="social-network-icon" style="border: 2px solid rgb(29, 155, 240)">
+                                <a href="" class="" ><i class="fab fa-twitter social-network-icon-scale" style="color: rgb(29, 155, 240);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Đăng ký -->
+        <div class="modal fade" id="staticBackdrop-SignUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="div-btn-close">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-header">  
+                        <h5 class="modal-title t-gold" id="staticBackdropLabel">Đăng ký</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="modal-body_item">
+                                <label class="label-email">Email</label>
+                                <input type="email" name="email" id="email-login" placeholder="VD: example@gmail.com">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="modal-body_item">
+                                <label class="label-password">Nhập lại mật khẩu</label>
+                                <input type="password" name="password" id="password-login" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-signup">
+                            <a href=""><button type="button" class="btn btn-primary">Đăng ký</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a class="footer-font" href="/themes">Themes</a>
+                <a class="footer-font" href="/promotions">Promotions</a>
+                <a class="footer-font" href="/blogs">Blogs</a>
+                <a class="footer-font" href="/about">About</a>
+            </div>
+            <div class="copyright center">2021 - All rights reserved to &copy;Vietnam Experdition</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
